@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
+    <title>icone adherents</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="AGIPI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="220-espace-adh-D-Copy" transform="translate(-1209.000000, -31.000000)" fill-rule="nonzero" fill="#0068A6">
+            <g id="sur-header">
+                <g id="BTN-Adherent" transform="translate(1150.000000, 23.000000)">
+                    <g id="icone-adherents" transform="translate(59.000000, 1.000000)">
+                        <path d="M16.1928615,20.5399716 C18.1552939,19.2074266 19.4444444,16.9576713 19.4444444,14.4074074 C19.4444444,10.3161106 16.1289065,7 12.037037,7 C7.944071,7 4.62962963,10.3155865 4.62962963,14.4074074 C4.62962963,16.9580739 5.91843047,19.2078064 7.88090601,20.5402294 C3.15477517,21.9365098 0,25.7760633 0,31.0740741 L0,32 L24.0740741,32 L24.0740741,31.0740741 C24.0740741,25.7754467 20.9196146,21.9359753 16.1928615,20.5399716 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

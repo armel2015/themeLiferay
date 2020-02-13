@@ -1,0 +1,373 @@
+.parrainage{
+  padding-bottom:10px;
+  .content-wrapper{
+    text-align: left;
+  }
+  &__btn-submit{
+    border-radius: 30px;
+    background-color: $pink;
+    color: $white;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 15px;
+    padding: 23px 100px;
+    margin: 54px auto;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0 none;
+    width: auto;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-style: normal;
+    &:hover{
+      background: #E21B95;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+    }
+  }
+}
+.parrainage-description{
+  padding:40px 0;
+  margin-bottom:55px;
+  .content-wrapper{
+    @include tablet-mobile{
+      padding: 0 45px;
+    }
+    @include phone-only {
+      padding: 0 20px;
+    }
+  }
+  &__info{
+    float: left;
+    width: 40%;
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+    @include phone-only {
+      width: 100%;
+    }
+  }
+  &__caption{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  &__subcaption{
+    color: $black;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+  &__text{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: $black;
+  }
+  &__img{
+    float: right;
+    width: 50%;
+    img{
+      width: 100%;
+    }
+    @include phone-only {
+      display: none;
+    }
+  }
+  .referrer__buttons{
+    margin-top:48px;
+
+    .download {
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.informations-parrain{
+  margin-bottom: 20px;
+  &__wrap{
+    padding:45px;
+    @include phone-only {
+      padding: 35px 20px;
+    }
+  }
+  &__caption{
+    color: $black;
+    font-size: 18px;
+    line-height:22px;
+    font-weight:900;
+    text-transform: uppercase;
+    margin-bottom:5px;
+  }
+  &__info{
+    color: $grey-dark;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 40px;
+    span{
+      display: block;
+    }
+    a{
+      color: $blue;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  &__col{
+    float: left;
+    width: 50%;
+    @include tablet-mobile{
+      &:last-child{
+        .informations-parrain__line{
+          float: right;
+        }
+      }
+    }
+    @include phone-only {
+      width: 100%;
+    }
+  }
+  &__line{
+    float: left;
+    width: 80%;
+    margin-bottom: 40px;
+    position: relative;
+    @include tablet-mobile{
+      width: 90%;
+    }
+    @include phone-only {
+      width: 100%;
+    }
+    &--label{
+      float: left;
+      width: 38%;
+      color: $black;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: bold;
+      margin: 0;
+      @include tablet-mobile{
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    &--desc{
+      float: left;
+      width: 60%;
+      color: $grey-dark;
+      font-size: 18px;
+      line-height: 22px;
+      position: relative;
+      @include tablet-mobile{
+        width: 100%;
+      }
+      a{
+        color: $grey-dark;
+        :hover{
+          text-decoration: underline;
+        }
+      }
+      .warning-message{
+        position: absolute;
+        color: $error;
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 7px;
+        display: block;
+        text-align: right;
+        right: 0;
+      }
+    }
+    &--field{
+      width: 100%;
+      height: 40px;
+      border-radius: 4px;
+      border: 1px solid #BEBEBE;
+      background: none;
+      color: #2D3449;
+      font-size: 13px;
+      font-style: italic;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none !important;
+      position: relative;
+      outline: none;
+    }
+    &--select:before{
+      position: absolute;
+      font-size: 14px;
+      right: 5px;
+      top: 50%;
+      margin-top: -5px;
+      line-height: 5px;
+      text-align: center;
+      width: 10px;
+      height: 10px;
+      content: "\f0dd";
+      font-family: 'FontAwesome';
+      color: #BEBEBE;
+    }
+    .field--warning{
+      border-color: $error;
+      color: $error;
+    }
+    &--field-sml{
+      width: 100%;
+    }
+    &--radio {
+      vertical-align: top;
+      width: 17px;
+      height: 17px;
+      margin: 0 3px 0 0;
+    }
+    &--radio + label {
+      cursor: pointer;
+      margin: 0;
+      color: #6B6B6B;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: normal;
+    }
+    &--radio:not(checked) {
+      position: absolute;
+      opacity: 0;
+    }
+    &--radio:not(checked) + label {
+      position: relative;
+      padding: 0 0 0 27px;
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 300;
+    }
+    &--radio:not(checked) + label:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #BEBEBE;
+      border-radius: 50%;
+      background: $white;
+    }
+    &--radio:not(checked) + label:after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $blue;
+      opacity: 0;
+      transition: all .2s;
+    }
+    &--radio:checked + label:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $blue;
+      border-radius: 50%;
+      background: $white;
+    }
+    &--radio:checked + label:after {
+      opacity: 1;
+    }
+  }
+  &__line--full{
+    width: 65%;
+
+    .necessarily {
+      color: $pink;
+    }
+    .informations-parrain__line--label{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .informations-parrain__line--desc {
+      width: 100%;
+
+      &.code-postal-field {
+        width: 50%;
+        @include phone-only {
+          width: 100%;
+        }
+      }
+    }
+    @include tablet-only{
+      width: 90%;
+    }
+    @include phone-only {
+      width: 100%;
+    }
+  }
+  &__message{
+    color: $green;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+  }
+}
+.informations-parrain-message{
+  margin-bottom: 40px;
+
+  .custom-option-selected {
+    font-size: 13px;
+    font-style: italic;
+  }
+}
+
+.user-desc {
+  color:  #6B6B6B;
+}
+
+.choise-version {
+  width: auto;
+}
+
+#dateNaissance {
+  &::-webkit-input-placeholder {
+    color: #2D3449;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+  }
+  &::-moz-placeholder {
+    color: #2D3449;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+  }
+  &:-ms-input-placeholder {
+    color: #2D3449;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+  }
+  &:-moz-placeholder {
+    color: #2D3449;
+    font-size: 1.4rem;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,42 @@
+.resulte-search {
+  .result {
+    width: 100%;
+
+    ul {
+      &:first-child {
+        width: 841px;
+        padding-left: 0;
+        margin: 20px auto;
+        margin-bottom: 30px;
+        @media (min-width: 320px) and (max-width: 768px) {
+          padding-left: 10px;
+          padding-right: 10px;
+          width: auto;
+        }
+        .list-group-item {
+          border-left: 2px solid #0B69A5;
+          margin-bottom: 30px;
+          padding-left: 10.5px;
+          .date {
+            height: 19px;
+            color: #9D9D9D;
+            font-family: Lato;
+            font-size: 16px;
+            line-height: 19px;
+            display: block;
+            margin-bottom: 3px;
+          }
+          a {
+            display: inline-block;
+            width: auto;
+            color: #0B69A5;
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

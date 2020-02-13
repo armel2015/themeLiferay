@@ -1,0 +1,2367 @@
+#chart7 {
+  height: 500px;
+  margin-top: 110px;
+  width: 100%;
+  float: left;
+  margin-bottom: 75px;
+
+  .custom-legend {
+    position: relative !important;
+    top: -100px !important;
+    left: 0 !important;
+    padding-left: 45px !important;
+  }
+
+  .legend-target {
+    display: inline-block;
+    margin-right: 4%;
+
+    &:after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+
+  .jqplot-table-legend-swatch-outline {
+    border: none;
+  }
+
+  .jqplot-table-legend-swatch {
+    width: 26px;
+    height: 26px;
+    border-width: 13px;
+  }
+
+  .color {
+    float: left;
+    display: block;
+  }
+
+  .text-legend {
+    float: left;
+    display: block;
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 13px;
+  }
+
+  .jqplot-axis.jqplot-yaxis {
+    margin-left: 30px;
+    font-size: 14px;
+  }
+
+  .jqplot-xaxis-tick {
+    font-size: 13px;
+
+    @include tablet-only {
+      -webkit-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+      transform: rotate(-50deg);
+
+    }
+  }
+
+  .jqplot-axis.jqplot-xaxis {
+    bottom: -15px !important;
+  }
+
+  @include phone-only {
+    padding-left: 6%;
+    margin-top: 20px;
+    height: auto !important;
+
+    .progbar-label {
+      font-size: 16px;
+      margin-bottom: 20px;
+      display: inline-block;
+      color: $black;
+      span {
+        font-size: 18px;
+        margin-bottom: 4px;
+        font-weight: bold;
+
+        @include phone-only {
+          &:nth-of-type(2) {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+.none {
+  z-index: -1;
+  position: relative !important;
+}
+#TooltipDiv {
+  width: 130px;
+  border-radius: 5px;
+  height: auto;
+  float: left;
+  display: block;
+  position: absolute;
+  right: 5px;
+  z-index: 1;
+  background: white;
+  padding: 12px;
+  text-align: left;
+
+  .title {
+    font-style: italic;
+  }
+
+  .this {
+    display: block;
+    position: relative;
+    padding-left: 12px;
+
+    @include phone-only {
+      font-size: 18px;
+    }
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-right: 9px solid black;
+      border-bottom: 4px solid transparent;
+      left: -6px;
+      top: 8px;
+    }
+  }
+
+  @include phone-only {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: none;
+    padding-left: 6%;
+
+    .title {
+      font-style: normal;
+      font-size: 18px;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .this {
+      padding-left: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.epargne {
+  .page-top-title {
+    .portlet {
+      padding-top: 0;
+    }
+  }
+  .content-hide-block__arr {
+    display: none;
+    right: 18px;
+    top: 33px;
+    z-index: 10;
+
+    @include phone-only {
+      display: block;
+    }
+  }
+
+  text-align: left;
+  clear: both;
+  margin-bottom: 60px;
+
+  @include phone-only {
+    margin-bottom: 20px;
+  }
+  .content-wrapper{
+    position: static;
+    text-align: left;
+    @include tablet-mobile{
+      padding: 0 10px;
+    }
+  }
+
+  .epargne-wrap{
+    float: right;
+    width: 78%;
+    @include phone-only {
+      padding-top: 20px;
+      width: 100%;
+      clear: both;
+
+      h2 {
+        padding-top: 32px;
+      }
+    }
+    @include tablet-only {
+      padding-top: 20px;
+      width: 100%;
+      clear: both;
+    }
+    @include small-screen {
+      float: right;
+      width: 78%;
+    }
+  }
+
+  &__detail {
+    display: table;
+    width: auto;
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    position: relative;
+    margin-bottom: 48px;
+    cursor: pointer;
+
+    @include phone-only {
+      margin-bottom: 29px;
+    }
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+
+      &:before {
+        background: $blue;
+      }
+    }
+
+    &:before {
+      content: '\f178';
+      font-family: "FontAwesome";
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      margin-right: 3px;
+      font-weight: 300;
+      font-size: 1.3rem;
+      height: 24px;
+      color: #fff;
+      width: 24px;
+      border-radius: 50px;
+      background-color: $pink;
+      line-height: 24px;
+    }
+
+    &.retraite-details {
+      margin-bottom: 41px;
+    }
+  }
+
+  &__info-help-bth {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    bottom: 10px;
+    background: url(../images/icons/tooltip.svg) center center no-repeat;
+    display: inline-block;
+    top: 5px;
+    margin-left: 23px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include phone-only {
+      margin-left: 10px;
+    }
+  }
+}
+.help-popup-container {
+  display: inline-block;
+  position: relative;
+}
+
+.help-popup {
+  width: 284px;
+  height: auto;
+  border: 1px solid $pink;
+  position: absolute;
+  display: none;
+  background: $white;
+  padding: 39px 22px 59px 19px;
+  text-align: center;
+  box-shadow: 0 2px 4px lightgrey;
+  z-index: 14;
+  bottom: 50px;
+  left: 40%;
+  transform: translate(-50%, 0);
+
+  @include phone-only {
+    width: 216px;
+    padding: 54px 28px;
+    bottom: -76px;
+    left: 50%;
+    transform: translate(12%, -2%);
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid $pink;
+    border-right: 1px solid $pink;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -11px;
+    z-index: 2;
+    background: white;
+    left: 48%;
+
+    @include phone-only {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-bottom: 1px solid $pink;
+      border-left: 1px solid $pink;
+      border-right: none;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      z-index: 2;
+      background: white;
+      left: -11px;
+      top: 50%;
+    }
+  }
+
+  a {
+    font-weight: bold;
+    color: $pink;
+    position: relative;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      content: '';
+      height: 1px;
+      width: 100%;
+      background: $pink;
+    }
+  }
+}
+
+.help-text {
+  color: #C31981;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+  text-transform: none;
+
+  a {
+    @include phone-only {
+      display: inline-block;
+
+      &:after {
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background: $pink;
+      }
+    }
+  }
+}
+
+.close-help {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: $pink;
+  display: block;
+  font-size: 28px;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.left-part {
+  float: left;
+  width: 70%;
+  text-align: left;
+
+  @include phone-only {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  @include tablet-only {
+    width: 56%;
+  }
+
+  .page-label {
+    font-size: 18px;
+    font-weight: 900;
+    color: $black;
+    text-transform: uppercase;
+
+    @include phone-only {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 0;
+    @include phone-only {
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 32px;
+
+    }
+  }
+}
+
+.right-part {
+  float: left;
+  width: 30%;
+  text-align: right;
+  padding-top: 14px;
+
+  @include phone-only {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  @include tablet-only {
+      width: 44%;
+  }
+  .contract-namber {
+    &__label, &__value {
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+
+      @include  phone-only {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+  .date-public {
+    &__label, &__value {
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+
+      @include phone-only {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  .date-title {
+    span {
+      @include tablet-only {
+        font-size: 16px !important;
+        line-height: 19px !important;
+      }
+    }
+  }
+}
+
+.epargne-block {
+  background: inherit;
+  margin-bottom: 20px;
+
+  @include tablet-only {
+    margin-bottom: 20px;
+  }
+
+  @include phone-only {
+    margin-bottom: 0;
+  }
+}
+
+.left-interactive, .interactive {
+  width: 48.99%;
+  float: left;
+  background: $white;
+  min-height: 450px;
+  padding-top: 28px;
+  padding-left: 45px;
+  padding-bottom: 33px;
+  margin-right: 20px;
+  position: relative;
+
+  @include tablet-only {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 4%;
+  }
+
+  @include phone-only {
+    width: 100%;
+    padding-left: 4%;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 0;
+  }
+
+  &__title {
+    position: relative;
+    display: inline-block;
+    h2 {
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 22px;
+      display: inline-block;
+      width: auto;
+      text-transform: uppercase;
+      margin-top: 0;
+
+      @include phone-only {
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 17px;
+        padding-right: 11%;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .fitst-element {
+    text-transform: uppercase;
+    @include phone-only {
+      width: 100%;
+    }
+  }
+  .interactive__title-wrap{
+
+  }
+
+  &__date {
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: -5px;
+    display: block;
+    margin-bottom: 38px;
+    position: relative;
+
+    @include phone-only {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+  }
+
+  &.visible-no {
+    min-height: 0;
+  }
+}
+
+.constitue-block {
+  border-left: 3px solid black;
+  padding-left: 20px;
+  margin-bottom: 15px;
+
+  @include phone-only {
+    padding-left: 3%;
+  }
+
+  .title {
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+
+    @include  phone-only {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 25px;
+    }
+  }
+
+  .calc {
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+
+    @include  phone-only {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 25px;
+    }
+  }
+}
+
+.bonus, .type-gestion {
+  color: #2D3449;
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 16px;
+
+  @include phone-only {
+    font-size: 16px;
+  }
+
+  span {
+    display: block;
+    color: black;
+  }
+
+  &__value {
+    opacity: 0.7;
+    font-weight: 300;
+  }
+}
+
+.bonus {
+  min-height: 70px;
+}
+
+
+.download-info {
+  display: inline-block;
+  width: auto;
+  position: relative;
+  color: #2D3449;
+  font-family: Lato;
+  margin-top: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+
+
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+
+    &:before {
+      background: $blue;
+    }
+
+
+  }
+  &:before {
+    content: '\f019';
+    font-family: "FontAwesome";
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-right: 3px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    width: 24px;
+    border-radius: 50px;
+    background-color: #C31981;
+  }
+
+  &.retraite-info {
+    margin-top: 37px;
+  }
+
+  @include phone-only {
+    margin-bottom: 20px;
+  }
+}
+
+.right-interactive {
+  width: 48%;
+  float: left;
+  background: $white;
+  padding-left: 45px;
+  padding-bottom: 33px;
+
+  @include tablet-only {
+    width: 100%;
+    text-align: left;
+    padding-left: 4%;
+    margin-bottom: 0;
+
+  }
+
+  @include phone-only {
+    min-height: 0;
+    width: 100%;
+  }
+
+}
+
+
+.right-graph {
+  margin-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+
+  table.jqplot-table-legend {
+    border: none;
+    left: 0 !important;
+    bottom: 0 !important;
+    top: -30px !important;
+
+    tr.jqplot-table-legend {
+      td.jqplot-table-legend {
+        display:inline-block;
+        margin-right: 7px;
+      }
+      .jqplot-table-legend-swatch {
+        border-width: 5px 5px;
+        border-style: solid;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .interactive__title {
+    text-align: center;
+    display: block;
+
+    @include phone-only {
+      text-align: left;
+      padding-right: 10%;
+      padding-left: 4%;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 19px;
+    text-transform: none;
+    padding-bottom: 23px;
+    position: relative;
+    margin-bottom: 7px;
+    padding-top: 10px;
+
+    @include phone-only {
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 900;
+      padding-bottom: 0;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom:0;
+      height: 1px;
+      background: #BEBEBE;
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 132px;
+
+      @include phone-only {
+        width: 0;
+      }
+    }
+  }
+}
+
+.support-text {
+  text-align: center;
+  color: #2D3449;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 17px;
+  padding: 0 10px 20px 10px;
+
+  @include phone-only {
+    padding-left: 4%;
+  }
+}
+
+#chart5, #chart6 {
+  min-height: 338px;
+  width: 100%;
+  position: relative;
+  margin: 30px auto;
+
+  .jqplot-data-label-inner {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  span {
+    line-height: 16px;
+    font-size: 12px;
+
+    &.jqplot-data-label {
+      width: auto;
+      padding-left: 25px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    height: 218px;
+    width: 250px;
+    position: relative;
+    margin: 30px auto;
+    margin-bottom: 0;
+
+    span {
+      width: 50px;
+      text-align: center;
+      line-height: 17px;
+      font-size: 12px;
+    }
+  }
+  @include phone-only {
+    width: 90%;
+    height: auto;
+  }
+
+  .jqplot-highlighter-tooltip {
+    font-size: 14px;
+    padding: 2px 3px;
+  }
+  .prog-wrap {
+    font-family: Lato;
+    width: 100%;
+    height: 5px;
+    background: #D1D1D1;
+  }
+  .prog-bar {
+    height: 100%;
+  }
+  .progbar-label {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 15px 0 6px 0;
+    span {
+      font-size: 14px;
+      color: $black;
+      font-weight: 300;
+      margin-left: 10px;
+    }
+  }
+
+  &.retraite-graph-right {
+    margin-top: 78px;
+    margin-bottom: 78px;
+  }
+}
+
+.big-graph-block {
+  background: #fff;
+  margin-bottom: 20px;
+  padding-top: 32px;
+  position: relative;
+
+  section {
+    position: static;
+  }
+
+  .download-info {
+    position: absolute;
+    right: 15px;
+    margin-top: 1px;
+
+    @include phone-only {
+      position: relative;
+      padding-top: 15px;
+      padding-left: 40px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .big-title {
+    margin-left: 45px;
+    max-height: 80%;
+
+    @include phone-only {
+      margin-left: 4%;
+    }
+
+    h2 {
+      margin-top: 0;
+      @include phone-only {
+        padding-top: 0;
+      }
+    }
+
+    @include tablet-mobile {
+      margin-left: 4%;
+      padding-right: 5%;
+
+      section.portlet {
+        padding-top: 0;
+      }
+    }
+
+    @include phone-only {
+      padding-top: 0;
+    }
+  }
+
+  &.visible-no {
+    padding-top: 32px;
+  }
+}
+
+.type-gestion-wrap {
+  background: $white;
+  padding-left: 45px;
+  padding-top: 39px;
+  padding-bottom: 72px;
+  margin-bottom: 20px;
+
+  @include phone-only {
+    padding-bottom: 32px;
+    padding-top: 0;
+    padding-left: 4%;
+  }
+
+  @include  tablet-only {
+    padding-left: 4%;
+    position: relative;
+  }
+
+  .big-title {
+    width: 100%;
+    float: left;
+    margin-bottom: 43px;
+
+    @include phone-only {
+      margin-bottom: 27px;
+    }
+  }
+
+  .block {
+    display:block ;
+    margin-bottom: 33px;
+    h3 {
+      color: $black;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+
+      @include phone-only {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    p {
+      color: $black;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 100;
+      width: 89%;
+
+      @include phone-only {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  .type-gestion {
+    &__info {
+      width: 48.95%;
+      float: left;
+      margin-right: 20px;
+      background: white;
+
+      @include tablet-mobile {
+        width: 100%;
+      }
+    }
+
+    &__graph {
+      width: 48.95%;
+      float: left;
+      background: white;
+
+
+      @include tablet-only {
+        width: 100%;
+      }
+
+      @include  phone-only{
+        width: 100%;
+      }
+
+      table.jqplot-table-legend {
+        border: none;
+        left:0 !important;
+        bottom: 0 !important;
+        top: -30px !important;
+
+        tr.jqplot-table-legend {
+          td.jqplot-table-legend {
+            display:inline-block;
+            margin-right: 7px;
+          }
+          .jqplot-table-legend-swatch {
+            border-width: 5px 5px;
+            border-style: solid;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .repartition-chart {
+        min-height: 0;
+        width: 90%;
+        position: relative;
+        margin: 30px auto;
+        margin-left: 0;
+
+
+        @media (min-width: 320px) and (max-width: 767px) {
+          height: 218px;
+          width: 250px;
+          position: relative;
+          margin: 30px auto;
+          margin-bottom: 0;
+
+          span {
+            width: 50px;
+            text-align: center;
+            line-height: 17px;
+            font-size: 12px;
+          }
+        }
+        @include phone-only {
+          width: 95%;
+          height: auto;
+          min-height: 60px;
+          margin-bottom: 20px;
+        }
+
+        .jqplot-highlighter-tooltip {
+          font-size: 14px;
+          padding: 2px 3px;
+        }
+        .prog-wrap {
+          font-family: Lato;
+          width: 100%;
+          height: 5px;
+          background: #D1D1D1;
+        }
+        .prog-bar {
+          height: 100%;
+        }
+        .progbar-label {
+          font-size: 20px;
+          font-weight: 900;
+          margin: 15px 0 6px 0;
+          span {
+            font-size: 14px;
+            color: $black;
+            font-weight: 300;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .statistic-block {
+    width: 100%;
+    margin-bottom: 55px;
+    float: left;
+    position: relative;
+
+
+    &__title {
+      color: $black;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+      width: 100%;
+      margin-bottom: 18px;
+    }
+    &__wrapper {
+      position: relative;
+      width: 95%;
+      padding-top: 5px;
+      padding-left: 7px;
+      background-image: -webkit-linear-gradient(top, #F2F7FA 0, #F2F7FA 34px, #ffffff 34px, #ffffff 100%);
+      background-image:  -o-linear-gradient(top, #F2F7FA 0, #F2F7FA 34px, #ffffff 34px, #ffffff 100%);
+      background-image:  linear-gradient(to bottom, #F2F7FA 0, #F2F7FA 34px, #ffffff 34px, #ffffff 100%);
+
+      @include phone-only {
+        background-image: -webkit-linear-gradient(top, #F2F7FA 0, #F2F7FA 48px, #ffffff 48px, #ffffff 100%);
+        background-image:  -o-linear-gradient(top, #F2F7FA 0, #F2F7FA 48px, #ffffff 48px, #ffffff 100%);
+        background-image:  linear-gradient(to bottom, #F2F7FA 0, #F2F7FA 48px, #ffffff 48px, #ffffff 100%);
+      }
+
+      h3 {
+        color: #2D3449;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+        min-height: 30px;
+
+        @include phone-only {
+          min-height: 44px;
+        }
+      }
+
+      span {
+        display: block;
+        color: #2D3449;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+      }
+    }
+
+    &__legend {
+      float: left;
+      width: 30%;
+
+      @include phone-only {
+        width: 60%;
+      }
+    }
+
+    &__container {
+      float: left;
+      width: 70%;
+
+      @include phone-only {
+        width: 38%;
+        margin-left: 2%;
+        overflow-x: hidden;
+
+      }
+    }
+
+    &__value {
+      float: left;
+      margin-right: 4.2%;
+
+      span {
+        text-align: right;
+      }
+    }
+
+    @include tablet-mobile {
+      &:after {
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 95%;
+        content: '';
+        background: #bebebe;
+        bottom: -27px;
+      }
+    }
+  }
+
+  .reglamentation-massage {
+    float: left;
+    width: 95%;
+    margin-top: 51px;
+    h3 {
+      color: $black;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+
+      @include phone-only {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    p {
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 300;
+
+      @include phone-only {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+.gestion-pilote {
+  padding-top: 32px;
+  padding-left: 45px;
+  background: #ffffff;
+  padding-bottom: 32px;
+  margin-bottom: 20px;
+  position: relative;
+
+  @include phone-only {
+    padding-left: 4%;
+    padding-top: 0;
+    padding-bottom: 30px;
+    padding-right: 4%;
+  }
+  &__title {
+    color: $black;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    margin-top: 0;
+
+    @include  phone-only {
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 17px;
+      padding-top: 32px;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    display: inline-block;
+    @include phone-only {
+      width: 100%;
+    }
+  }
+
+  &--link {
+    display: none;
+    width: auto;
+    position: relative;
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 10px;
+    &.visible {
+      display: table;
+    }
+
+    &:before {
+      content: '\f019';
+      font-family: "FontAwesome";
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: 300;
+      font-size: 1.3rem;
+      height: 24px;
+      line-height: 24px;
+      color: #fff;
+      width: 24px;
+      border-radius: 50px;
+      background-color: #C31981;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #0068A1;
+
+      &:before {
+        background-color: #0068A1;
+      }
+    }
+
+    &:focus {
+      text-decoration: none;
+      color: #0068A1;
+    }
+  }
+
+  &__list{
+    display: inline-block;
+    @include phone-only {
+      display: block;
+      width: 100%;
+    }
+    &--btn {
+      display: none;
+      position: absolute;
+      height: 61px;
+      left: 0;
+      right: 0;
+      bottom: -19px;
+      cursor: pointer;
+      min-width: 258px;
+      background-image: -ms-linear-gradient(bottom, #FFFFFF 54%, rgba(255, 255, 255, 0) 100%);
+      background-image: -moz-linear-gradient(bottom, #FFFFFF 54%, rgba(255, 255, 255, 0) 100%);
+      background-image: -o-linear-gradient(bottom, #FFFFFF 54%, rgba(255, 255, 255, 0) 100%);
+      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(82, #FFFFFF), color-stop(100, rgba(255, 255, 255, 0)));
+      background-image: -webkit-linear-gradient(bottom, #FFFFFF 54%, rgba(255, 255, 255, 0) 100%);
+      background-image: linear-gradient(to top, #FFFFFF 54%, rgba(255, 255, 255, 0) 100%);
+      &:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        display: block;
+        position: absolute;
+        left: 150px;
+        right: auto;
+        bottom: 20px;
+        margin: 0 auto;
+        border-left : 3px solid #0068A6;
+        border-top : 3px solid #0068A6;
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        @include phone-only {
+          left: 0;
+          right: 0;
+        }
+      }
+
+      &.open-list-btn {
+        height: 30px;
+        &:before {
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          bottom: 15px;
+          left: 150px;
+          right: auto;
+          @include phone-only {
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.beneficiaries {
+  padding-top: 32px;
+  padding-left: 45px;
+  background: #ffffff;
+  padding-bottom: 32px;
+
+  @include phone-only {
+    padding-left: 4%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &__title {
+    color: $black;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    margin-top: 0;
+
+    @include  phone-only {
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 17px;
+    }
+  }
+
+  &__container {
+    width: 97%;
+    position: relative;
+    padding-bottom: 31px;
+    border-top: 1px solid lightgrey;
+  }
+
+  &__articles {
+    display: table;
+    width: 100%;
+    vertical-align: top;
+    padding: 15px 0;
+    position: relative;
+    height: auto;
+    border-bottom: 1px solid lightgray;
+
+    @include phone-only {
+      width: 100%;
+    }
+
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    h3 {
+      color: $black;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0;
+
+      @include phone-only {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    span {
+      display: block;
+      color: $black;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 300;
+
+      @include phone-only {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+}
+
+.details-popup {
+  div {
+    box-sizing: border-box;
+  }
+  display: none;
+  padding-left: 0;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: none;
+  z-index: 1200;
+  background: rgba( 0, 0, 0, 0.3);
+
+  @include tablet-only {
+    top: -60px;
+  }
+
+  @include phone-only {
+    top: -60px;
+  }
+  &.non-distributable {
+    position: fixed;
+    display: block;
+    z-index: 9999999;
+  }
+
+  &__close-bth {
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: -14px;
+    top: 3%;
+    height: 40px;
+    box-sizing: border-box;
+
+    @include tablet-only {
+      width: 100%;
+    }
+
+    @include phone-only {
+      width: 100%;
+      position: absolute;
+      top: 2%;
+      z-index: 4;
+    }
+
+    &.date-close-popin {
+      width: 100%;
+      position: absolute;
+      margin: 0;
+
+      @include phone-only {
+        width: 100%;
+        top: 5%;
+        right: 5px;
+        z-index: 4;
+      }
+    }
+
+    &.first-bth {
+      top: -2.5%;
+    }
+
+    a {
+      right: 8px;
+      top: -6px;
+      display: block;
+      font-size: 70px;
+      position: absolute;
+      color: $blue;
+      text-decoration: none;
+      -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      transform: rotate(135deg);
+
+      @include phone-only {
+        color: $blue;
+      }
+
+      &:hover {
+        color: $pink;
+      }
+    }
+
+    &.mon-axa-bth {
+      top: 0;
+      a {
+        right: 3%;
+        top: 0;
+        display: block;
+        font-size: 70px;
+        position: absolute;
+        color: $blue;
+
+        @include tablet-only {
+          font-size: 60px;
+        }
+
+        @include phone-only {
+          font-size: 40px;
+        }
+
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+  }
+  &__body {
+    width: 948px;
+    background: #F3F3F5;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 4%;
+    height: 700px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    @include tablet-only {
+      width: 90%;
+      height: 600px;
+    }
+
+    @include small-screen {
+      width: 90%;
+      height: 600px;
+      top: 2%;
+    }
+
+    @include phone-only {
+      width: 90%;
+      height: 400px;
+    }
+
+    &.dates-body {
+      height: auto;
+      padding-bottom: 80px;
+      min-height: 220px;
+      background: #ffffff;
+      width: 380px;
+      text-align: left;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 30px;
+      overflow-y: visible;
+      overflow-x: visible;
+      background: white;
+
+
+      .content-select--wrapper {
+        width: 100%;
+
+        .content-select {
+          width: 100%;
+        }
+      }
+      @include phone-only {
+        width: 90%;
+      }
+
+
+      .title {
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #0068A6;
+        font-size: 28px;
+        line-height: 32px;
+        margin: 0;
+      }
+
+      .date-bth {
+        position: absolute;
+        text-align: center;
+        text-align: -webkit-center;
+        display: inline-block;
+        line-height: 41px;
+        font-weight: bold;
+        font-size: 15px;
+        height: 41px;
+        color: #fff;
+        width: 41px;
+        border-radius: 50%;
+        background-color: #0068a6;
+        right: 30px;
+        bottom: 30px;
+        box-shadow: none;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          background: $pink;
+        }
+      }
+
+      .history-link-popin-error {
+        width: 70%;
+        display: block;
+        position: absolute;
+        bottom: 20px;
+      }
+    }
+
+    &.non-distributable_body {
+      height: auto;
+      padding: 30px 30px 30px 30px;
+      min-height: 220px;
+      background: #ffffff;
+      width: 420px;
+      text-align: left;
+      overflow-y: visible;
+      overflow-x: visible;
+      position: fixed;
+      top: 120px;
+      @include phone-only {
+        width: 90%;
+      }
+      .details-popup__close-bth  {
+        a {
+          @include phone-only {
+            top: -23px;
+          }
+          @include tablet-only {
+            top: -15px;
+          }
+          @include small-screen {
+            top: -6px;
+          }
+        }
+      }
+
+      .title {
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #0068A6;
+        font-size: 28px;
+        line-height: 32px;
+        margin: 0;
+        padding-right: 30px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #2D3449;
+        font-style: normal;
+        display: block;
+        margin: 0 4px;
+      }
+      .content-select--wrapper {
+        vertical-align: middle;
+        margin: 13px 0 13px 0;
+        display: inline-block;
+      }
+
+      .non-distributable-btn {
+        height: 50px;
+        width: auto;
+        border-radius: 30px;
+        color: #FFFFFF;
+        font-family: Lato;
+        font-size: 16px;
+        padding:16px;
+        font-weight: 900;
+        line-height: 13px;
+        text-align: center;
+        display: block;
+        box-shadow: none;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        float: right;
+        background-color: #0068A6;
+        border: 2px solid transparent;
+
+        &:hover {
+          text-decoration : none;
+          background-color: #ffffff;
+          color: #0068A6;
+          border: 2px solid #0068A6;
+        }
+      }
+
+    }
+  }
+
+  &__header {
+    height: auto;
+    background: $white;
+    padding-top: 37px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+
+    @include phone-only {
+      height: auto;
+    }
+  }
+
+  &__left-part {
+    float: left;
+    text-align: left;
+    width: 50%;
+    @include phone-only {
+      width: 100%;
+    }
+  }
+
+  &__right-part {
+    float: left;
+    text-align: right;
+    width: 50%;
+    @include phone-only {
+      width: 100%;
+      text-align: left;
+    }
+
+    .date-public {
+      margin-top: 10px;
+      width: 100%;
+      margin-bottom: 34px;
+      @include phone-only {
+        margin-bottom: 10px;
+      }
+      span {
+        display: inline-block;
+        color: $black;
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      margin-right: 14px;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 25px
+    }
+
+    @include phone-only {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__title {
+    color: $blue;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 28px;
+    margin-top: 0;
+  }
+
+  &__label {
+    color: $black;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+
+  &__value {
+    color: $black;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  &__container {
+    height: auto;
+    background-color: #F3F3F5;
+    padding-top: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+
+    @include phone-only {
+      height: auto;
+      padding-bottom: 50px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .pagination {
+      text-align: center;
+      position: relative;
+      width: 100%;
+      height: 40px;
+      bottom: 20px;
+      left: 0;
+
+      @include phone-only {
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .pagination-list {
+        width: 110px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid #CCCCCC;
+        position: relative;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        margin-bottom: 30px;
+
+        p {
+          font-size: 14px;
+          padding: 5px;
+
+        }
+
+        .fa-caret-down {
+          margin-left: 5px;
+          &:before {
+            font-size: 12px;
+          }font-size: 30px;
+        }
+        ul {
+          width: 110px;
+          padding-left: 0;
+          border-radius: 10px;
+          display: none;
+          margin-top: 0;
+
+
+          li {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+
+            &:hover {
+              color: #808;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__block {
+    float: left;
+    height: 350px;
+    width: 32%;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    background: $white;
+
+    @include phone-only {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    @include  tablet-only {
+      width: 47%;
+    }
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+
+      @include tablet-only {
+        margin-right: 20px;
+      }
+    }
+
+    .info {
+      margin-bottom: 14px;
+      .label {
+        padding-left: 0;
+        display: block;
+        color: $black;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+        text-align: left;
+        white-space: normal;
+      }
+      .value {
+        color: $black;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        display: block;
+        white-space: normal;
+      }
+    }
+  }
+
+  &__block-container {
+    padding: 0 13px;
+  }
+
+  &__color-title {
+    color: $white;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 58px;
+    margin: 0;
+    padding-top: 16px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+  }
+
+  .blue {
+    background-color: #146FAF;
+  }
+  .yellow {
+    background-color: #E8C32F;
+  }
+  .sky {
+    background-color: #4C85E9;
+  }
+  .grey {
+    background-color: #92ABB7;
+  }
+  .dark-grey {
+    background-color: #456675;
+  }
+  .cyan-light {
+    background-color: #6BD3ED;
+  }
+  .green-light {
+    background-color: #49D3A8;
+  }
+
+  &.mon-axa {
+    h3 {
+      color: #000000;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 35px;
+
+      @include phone-only {
+        margin-bottom: 15px;
+      }
+    }
+
+    p {
+      color: #000000;
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+
+      margin-bottom: 35px;
+
+      @include phone-only {
+        margin-bottom: 15px;
+      }
+
+
+    }
+    .details-popup__body {
+      max-width: 948px;
+      width: 100%;
+      padding: 93px 97px;
+      padding-bottom: 20px;
+      height: auto;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      overflow-y: auto;
+      min-height: 400px;
+      max-height: 700px;
+      background: white;
+      position: fixed;
+      -webkit-transform: translate(0, 10%);
+      -ms-transform: translate(0, 10%);
+      transform: translate(0, 10%);
+
+      @include tablet-only {
+        width: 90%;
+      }
+      @include phone-only {
+        padding: 30px;
+        max-height: 500px;
+      }
+
+      .big-pink-btn {
+        height: 60px;
+        width: 126px;
+        border-radius: 30px;
+        background-color: #C31981;
+        margin: 30px auto;
+        text-align: center;
+        vertical-align: middle;
+        display: block;
+
+        &:hover{
+          background: #DF0095;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+
+.active-nav-link {
+  color: $blue;
+  font-weight: 600;
+  &:before {
+    border-bottom: 2px solid $blue;
+    border-right: 2px solid $blue;
+    @include phone-only {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  @include phone-only {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.documents-nav-phone-fixed {
+  overflow: hidden;
+  position: relative;
+  background: white;
+  height: 60px;
+  margin-bottom: 0;
+  border: 1px solid #0068A6;
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+  @include tablet-only {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  a {
+    margin: 17px 0;
+  }
+
+  &.opened {
+    height: auto;
+  }
+}
+
+.documents-nav-fixed-bth {
+  display: none;
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:before{
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    right: 8px;
+    top: 15px;
+    border-bottom: 3px solid #0068A6;
+    border-right: 3px solid #0068A6;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &.up {
+    z-index: 0 ;
+    &:before{
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      right: 8px;
+      top: 15px;
+      border-bottom: 3px solid #0068A6;
+      border-right: 3px solid #0068A6;
+      -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+.pagination-statistic {
+  position: absolute;
+  left:0;
+  right: 0;
+  margin: auto;
+  bottom: -60px;
+  width: 300px;
+
+  .pagination-list-statistic {
+    display: block;
+
+    ul {
+      text-align: center;
+      li {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: lightgrey;
+        margin-left: 10px;
+        border-radius: 50%;
+
+        &.active {
+          background: $blue;
+        }
+      }
+    }
+  }
+}
+
+.visible-no {
+  padding-bottom: 10px;
+  padding-top: 0;
+  div, span, a, p {
+    display: none;
+    padding-bottom: 0;
+  }
+
+  .epargne__info-help-bth {
+    display: none;
+  }
+
+  section {
+    padding-top: 0;
+  }
+
+  div.interactive__title, h2.beneficiaries__title, .interactive__title-wrap {
+    display: block;
+    margin-bottom: 10px;
+
+    h2 {
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+  }
+
+  h2.beneficiaries__title {
+    margin-top: 0;
+  }
+
+  #TooltipDiv {
+    width: 0;
+    height: 0;
+    padding: 0;
+    display: none !important;
+  }
+}
+
+#left-menu {
+  position: relative;
+  top: 0;
+
+  @include phone-only {
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  @include tablet-only {
+    top :0;
+  }
+
+
+  &.left-menu-elastick {
+    top:0;
+  }
+}
+.left-menu-extranet {
+  height: 0;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .documents-nav-phone-fixed {
+    overflow: hidden;
+    position: relative;
+    background: white;
+    height: 60px;
+    margin-bottom: 0;
+    border: 1px solid #0068A6;
+    width: 95%;
+    margin: 0 auto;
+    float: none;
+    @include phone-only {
+      width: 100%;
+    }
+
+    @include tablet-only {
+      width: 100%;
+    }
+
+    a {
+      margin: 17px 0;
+    }
+
+    &.opened {
+      height: auto;
+    }
+  }
+
+  .documents-nav-fixed-bth {
+    display: none;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      right: 8px;
+      top: 15px;
+      border-bottom: 3px solid #0068A6;
+      border-right: 3px solid #0068A6;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    &.up {
+      z-index: 0;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        right: 8px;
+        top: 15px;
+        border-bottom: 3px solid #0068A6;
+        border-right: 3px solid #0068A6;
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+  .documents-nav__item_active {
+    display: block !important;
+  }
+
+  &.margin-BO-js {
+    margin-left: 7%;
+
+    @media only screen and (max-width: 1366px)  {
+      margin-left: 0;
+    }
+  }
+}
+
+.evolution-graph-error {
+  margin: 20px auto;
+  padding-left: 40px;
+}
+
+.pin-contract-info {
+  position: fixed;
+  top: 130px;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 200;
+}

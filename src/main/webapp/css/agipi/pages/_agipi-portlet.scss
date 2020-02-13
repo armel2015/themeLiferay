@@ -1,0 +1,25 @@
+.agipi-portlet{
+  padding-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  &.grey {
+    background: #F3F3F5;
+  }
+
+  .portlet {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @include tablet-only {
+      width: 95%;
+    }
+    @include phone-only {
+      width: 95%;
+    }
+    @include small-screen {
+      width: 95%;
+    }
+  }
+}

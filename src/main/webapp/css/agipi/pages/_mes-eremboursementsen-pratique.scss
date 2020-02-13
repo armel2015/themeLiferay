@@ -1,0 +1,361 @@
+.prevoyance--pratique-page {
+  .prevoyance--pratique {
+    &:after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+    background-color: inherit;
+    padding: 0;
+    padding-top: 25px;
+
+    &__title {
+
+      .journal-content-article {
+        color: #2D3449;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        padding-left: 11px;
+        margin-bottom: 18px;
+      }
+    }
+    .bth-container {
+      position: absolute;
+      bottom: 15px;
+      margin: auto;
+      left: 0;
+      right:0;
+
+    }
+    .inform-container {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      @media (min-width: 320px) and (max-width: 1024px) {
+        float: none;
+        margin: 0 auto;
+        width: 95%;
+      }
+
+      @media (min-width: 320px) and (max-width: 767px) {
+        float: none;
+        margin: 0 auto;
+      }
+      @media (min-width: 1024px) and (max-width:1300px) {
+        float: none;
+        width: 95%;
+        margin: 20px auto;
+      }
+    }
+
+    .small-info-block {
+      width: 316px;
+      background: #fff;
+      height: 290px;
+      display: block;
+      text-align: center;
+      position: relative;
+      float: left;
+      margin: 10px;
+      padding: 37px 31px 0 40px;
+      cursor: inherit;
+
+      @media (min-width: 320px) and (max-width: 767px) {
+        min-height: 245px;
+      }
+
+      @media (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      @media (min-width: 320px) and (max-width: 1024px) {
+        &:nth-child(3n) {
+          margin-right: 10px;
+        }
+      }
+
+      @media (min-width: 320px) and (max-width: 1023px){
+        width: 95%;
+      }
+      &__title {
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+        text-align: left;
+        min-height: 44px;
+
+        &.dark-green {
+          color: $dark-green;
+        }
+
+        &.title-green {
+          color: $title-green;
+        }
+
+        &.sky-blue {
+          color: $sky-blue;
+        }
+
+        &.blue {
+          color: $blue;
+        }
+
+        &.light-blue {
+          color: $light-blue;
+        }
+
+        &.green {
+          color: $green;
+        }
+      }
+
+      p {
+        color: #2D3449;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        text-align: left;
+        min-height: 90px;
+        max-height: 90px;
+
+        .infos-content {
+          overflow: hidden;
+          height: 50px;
+          display: block;
+        }
+      }
+    }
+
+    .consulter-bth {
+      text-transform: uppercase;
+      color: #fff;
+      padding: 15px 18px;
+      position: relative;
+      margin: auto;
+      display: inline-block;
+      width: auto;
+      border-radius: 20px;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 15px;
+      text-align: center;
+
+      @media (min-width: 320px) and (max-width: 767px) {
+        bottom: 5px;
+      }
+
+      &.sky-blue-bg {
+        background: $sky-blue;
+        &:hover {
+          background: $sky-blue-hover;
+        }
+      }
+
+      &.blue-bg {
+        background: $blue;
+        &:hover {
+          background: $blue-hover;
+        }
+      }
+
+      &.green-bg {
+        background: $green;
+        &:hover {
+          background: $green-hover;
+        }
+      }
+
+      &.light-blue-bg {
+        background: $light-blue;
+        &:hover {
+          background: $light-blue-hover;
+        }
+      }
+    }
+
+    .consulter {
+      position: relative;
+      display: block;
+      text-align: left;
+      padding-left: 60px;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-bottom: 2px solid #000;
+        border-right: 2px solid #000;
+        -webkit-transform: rotate(-43deg);
+        -ms-transform: rotate(-43deg);
+        transform: rotate(-43deg);
+        position: absolute;
+        left: 40px;
+        top: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      &.sky-blue-bg {
+        color: $sky-blue;
+      }
+
+      &.blue-bg {
+        color: $blue;
+      }
+
+      &.green-bg {
+        color: $green;
+      }
+
+      &.light-blue-bg {
+        color: $light-blue;
+      }
+    }
+  }
+}
+
+.attestation-card-container {
+  min-height: 270px;
+  max-width: 989px;
+  width: 100%;
+  float: right;
+  background-color: #6AD2EC;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  @include tablet-only {
+    width: 100%;
+  }
+
+  @include phone-only {
+    margin: 10px auto;
+    float: none;
+    width: 90%;
+  }
+
+  &__title {
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+  &__description {
+    color: #0068A6;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    display: block;
+    max-width: 390px;
+    @include phone-only {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  &__btn-container {
+    text-align: center;
+  }
+
+  &--btn {
+    height: 44px;
+    width: 221px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    color: #1A65AA;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    &:nth-of-type(1) {
+      margin-right: 44px;
+      @include tablet-only {
+        margin-right: 10px;
+      }
+      @include phone-only {
+        margin-right: 0;
+      }
+    }
+    @include phone-only {
+      width: 90%;
+      margin: 10px auto;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+  strong{
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+  u {
+    text-decoration: underline;
+  }
+}
+
+.card-wrap-attestation {
+  @include tablet-only {
+    padding-left: 27px !important;
+    padding-right: 5.5% !important;
+    //impotrant need for use styles only for this block
+  }
+  .lfr-alert-container {
+    width: 100%;
+    z-index: 199;
+    .alert-success-content, .alert-danger-content {
+      padding: 10px;
+      width: 100%;
+      margin-left: 9px;
+    }
+    @include tablet-only {
+      width: 100%;
+      z-index: 10 !important;
+    }
+    @include phone-only {
+      z-index: 10 !important;
+    }
+
+    .close {
+      top: -8px !important;
+      right: 0 !important;
+    }
+  }
+}
+

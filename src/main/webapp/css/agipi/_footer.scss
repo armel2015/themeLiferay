@@ -1,0 +1,242 @@
+footer {
+	overflow: hidden;
+	.footer-blue-block {
+		min-height: 202px;
+		.content-wrapper{
+			display: flex;
+			width: 100%;
+			text-align: left;
+			padding-top: 0;
+			padding-bottom: 0;
+			@include small-screen {
+				margin: 0 20px 0 20px;
+			}
+
+			@include phone-only {
+				display: block;
+			}
+			.info-block{
+				padding: 23px 40px 23px 0px;
+				background-color: #0068a6;
+				box-sizing:border-box;
+				width: 76%;
+				position: relative;
+				@include tablet-only {
+					padding-left: 20px;
+				}
+				&:before {
+					display: block;
+					position: absolute;
+					width: 1000px;
+					content: '';
+					top: 0;
+					left: 0;
+					background: #0068a6;
+					height: 100%;
+					-webkit-transform: translateX(-100%);
+					-ms-transform: translateX(-100%);
+					transform: translateX(-100%);
+				}
+				@include phone-only {
+					width: 100%;
+					padding: 20px;
+					background: $blue;
+				}
+				@include desktop-only {
+					padding-bottom: 50px;
+				}
+
+			}
+			.newsletter-block{
+				padding: 23px 20px 23px 40px;
+				width: 50%;
+				box-sizing:border-box;
+				background: #4b7cb2;
+				position: relative;
+				&:before {
+					display: block;
+					position: absolute;
+					width: 1000px;
+					content: '';
+					top: 0;
+					right: 0;
+					background: #4b7cb2;
+					height: 100%;
+					-webkit-transform: translateX(100%);
+					-ms-transform: translateX(100%);
+					transform: translateX(100%);
+				}
+
+				.light-blue {
+					@include tablet-only {
+						display: table;
+					}
+
+					@include phone-only {
+						display: table;
+					}
+				}
+				@include phone-only {
+					width: 100%;
+					background: #4B7CB2;
+					padding: 20px;
+				}
+			}
+		}
+
+		.block-title {
+			color: #FFFFFF;
+			font-family: Lato;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 17px;
+			opacity: 0.8;
+			display: block;
+			text-align: left;
+			&.udnderlined {
+				&:after {
+					display: none !important;
+				}
+			}
+		}
+	}
+
+	.footer-block{
+		.links{
+			text-align: left;
+			padding: 20px 1% 0 1%;
+			box-sizing:border-box;
+			@include phone-only {
+				padding: 20px 10px 0 10px;
+			}
+			.col{
+				margin-bottom: 25px;
+				padding: 10px;
+				display: inline-block;
+				box-sizing:border-box;
+				height: 100%;
+				vertical-align: top;
+				width: 19%;
+
+				@include tablet-only {
+					width: 24.6%;
+				}
+				@include phone-only {
+					width: 49.4%;
+					padding: 10px;
+				}
+				.title{
+					color: $blue;
+					font-size: 1.4rem;
+					line-height: 1.6rem;
+					margin-bottom: 20px;
+					font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+				}
+				a{
+					color: $grey-dark;
+					font-size: 1.4rem;
+					line-height: 1.6rem;
+					margin: 10px 0;
+					display: block;
+					font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+				.blue-links{
+					margin-top: 20px;
+					a{
+						color: $blue;
+					}
+				}
+				&.social-network{
+					float: none;
+					display: block;
+					.title {
+						margin-bottom: 10px;
+					}
+
+					@include desktop-only {
+						float: right;
+						width: 23.1%;
+					}
+						
+					a{
+						display: inline-block;
+						font-size: 2.1rem;
+						margin-top: 0;
+						line-height: 2.1rem;
+						position: relative;
+						margin-right: 22px;
+						&:hover{
+							color: $blue;
+							&:not(:last-child):after{
+								color: $grey-dark;
+							}
+						}
+						&:not(:last-child):after{
+							content: '|';
+							display: inline-block;
+							margin: 0 8px;
+							font-size:27px;
+							line-height: 27px;
+							position: absolute;
+						}
+
+						.fa-linkedin-square {
+							&:before {
+								font-size: 28px;
+							}
+						}
+
+						.fa-youtube {
+							&:before {
+								font-size: 28px;
+							}
+						}
+					}
+				}
+			}
+		}
+		#back-to-top{
+			float: right;
+			margin: 20px;
+			a{
+				color: $blue;
+				text-decoration: none;
+				font-size: 1.4rem;
+				line-height: 1.7rem;
+			}
+		}
+		.copyright{
+			float: left;
+			margin:20px;
+			color: $blue;
+			font-size: 1.4rem;
+			line-height: 1.7rem;
+		}
+
+		&.first-level {
+			@include tablet-mobile {
+				padding-top: 100px;
+				position: relative;
+			}
+		}
+
+		&.two-level {
+			@include tablet-mobile {
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				.links {
+					padding: 25px 10px 0 10px;
+				}
+			}
+			@include small-screen {
+				position: relative !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,400 @@
+.follow-us-block {
+  background-color: #F3F3F5;
+  padding : 40px 0 60px 0;
+  @include tablet-mobile {
+    padding : 30px 0 30px 0;
+  }
+  @include small-screen{
+    padding : 40px 20px 60px 20px !important;
+  }
+
+  &__title {
+    display: block;
+    margin : 0 auto 18px auto;
+    color: #0068A6;
+    font-family: Lato;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 52px;
+    text-align: center;
+    text-transform : uppercase;
+    max-width : 90%;
+    @include tablet-mobile {
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 41px;
+      text-align: center;
+      max-width: 90%;
+    }
+  }
+
+  &__sub-title {
+    display : block;
+    margin : 0 auto 50px auto;
+    max-width: 357px;
+    color: #0068A6;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    @include tablet-mobile {
+      max-width : 90%;
+      margin : 0 auto 31px auto;
+    }
+  }
+
+  &--wrapper {
+    width : 100%;
+    max-width : 1280px;
+    position : relative;
+    margin : 0 auto;
+    &:after {
+      clear: both;
+      display : table;
+      content : '';
+    }
+  }
+
+  .linkedin-part {
+    float : left;
+    width : 43.4%;
+    padding : 0;
+    margin-right: 3.2%;
+    @include tablet-mobile {
+      float : none;
+      width : 90%;
+      margin : 0 auto 24px auto;
+
+    }
+    @include small-screen {
+      float : left;
+      width : 43.4%;
+      padding : 0;
+      margin-right: 3.2%;
+    }
+    &--header {
+      width : 100%;
+      padding : 0 0 23px 0;
+      &:after {
+        clear : both;
+        content : '';
+        display : table;
+      }
+    }
+    &__logo {
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 19px;
+      float : left;
+      .fa-linkedin-square {
+        margin-right : 13px;
+        &:before {
+          content: "\f08c";
+          color: #0068A6;
+          font-size : 28px;
+        }
+      }
+    }
+    &__follow-btn {
+      border-radius: 1px;
+      background-color: #0084BF;
+      color : white;
+      text-decoration : none;
+      text-align : center;
+      display : inline-block;
+      width: auto;
+      padding: 7px 12px 7px 14px;
+      font-family: "Source Sans Pro";
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.28px;
+      line-height: 19px;
+      float : right;
+      cursor : pointer;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      &:hover {
+        -webkit-box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.4);
+        -moz-box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.4);
+        box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.4);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        text-decoration : none;
+      }
+    }
+    &__item {
+      padding : 17px 19px 22px 17px;
+      background : #ffffff;
+      margin-bottom : 15px;
+      max-height : 127px;
+      overflow : hidden;
+      cursor : pointer;
+      position: relative;
+      -webkit-box-shadow:  0 1px 1px 0 rgba(0,0,0,0.1);
+      box-shadow:  0 1px 1px 0 rgba(0,0,0,0.1);
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      &:last-of-type {
+        margin-bottom : 0;
+      }
+      @include tablet-mobile{
+        margin-bottom : 10px;
+      }
+      &:hover {
+        -webkit-box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.1);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s
+      }
+      &.first {
+        max-height : 177px;
+        min-height : 177px;
+        &:before {
+          position : absolute;
+          left : 0;
+          bottom : 0;
+          width : 100%;
+          height : 55px;
+          z-index : 5;
+          content : '';
+          background-image: -ms-linear-gradient(bottom, #FFFFFF 42%, rgba(255, 255, 255, 0) 100%);
+          background-image: -moz-linear-gradient(bottom, #FFFFFF 42%, rgba(255, 255, 255, 0) 100%);
+          background-image: -o-linear-gradient(bottom, #FFFFFF 42%, rgba(255, 255, 255, 0) 100%);
+          background-image: -webkit-gradient(linear, left bottom, left top, color-stop(42, #FFFFFF), color-stop(100, rgba(255, 255, 255, 0)));
+          background-image: -webkit-linear-gradient(bottom, #FFFFFF 42%, rgba(255, 255, 255, 0) 100%);
+          background-image: linear-gradient(to top, #FFFFFF 42%, rgba(255, 255, 255, 0) 100%);
+        }
+      }
+      &--top {
+        width : 100%;
+        margin-bottom: 8px;
+        &:after {
+          clear : both;
+          content : '';
+          display : table;
+        }
+        .company-logo {
+          float : left;
+          width : 48px;
+          height : 48px;
+        }
+
+        .info {
+          margin-left: 10px;
+          float : left;
+          padding-top : 5px;
+          .company-name {
+            display : block;
+            color: #262626;
+            font-family: "Source Sans Pro";
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: -0.06px;
+            line-height: 19px;
+          }
+          .update-info {
+            display : block;
+            color: #7C7C7C;
+            font-family: "Source Sans Pro";
+            font-size: 13px;
+            letter-spacing: -0.05px;
+            line-height: 17px;
+          }
+        }
+      }
+      &__content {
+        color: #6D6D6D;
+        font-family: "Source Sans Pro";
+        font-size: 15px;
+        line-height: 19px;
+      }
+
+      &:before {
+        position : absolute;
+        left : 0;
+        bottom : 0;
+        width : 100%;
+        height : 40px;
+        z-index : 5;
+        content : '';
+        background-image: -ms-linear-gradient(bottom, #FFFFFF 32%, rgba(255, 255, 255, 0) 100%);
+        background-image: -moz-linear-gradient(bottom, #FFFFFF 32%, rgba(255, 255, 255, 0) 100%);
+        background-image: -o-linear-gradient(bottom, #FFFFFF 32%, rgba(255, 255, 255, 0) 100%);
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(32, #FFFFFF), color-stop(100, rgba(255, 255, 255, 0)));
+        background-image: -webkit-linear-gradient(bottom, #FFFFFF 32%, rgba(255, 255, 255, 0) 100%);
+        background-image: linear-gradient(to top, #FFFFFF 32%, rgba(255, 255, 255, 0) 100%);
+      }
+    }
+  }
+  .youtube-part {
+    float : left;
+    width : 53.4%;
+    @include tablet-mobile{
+      float : none;
+      width : 90%;
+      margin : 0 auto;
+    }
+    @include small-screen {
+      float : left;
+      width : 53.4%;
+    }
+
+    &--header {
+      width : 100%;
+      padding: 0 0 23px 0;
+      &:after {
+        display : table;
+        clear : both;
+        content : '';
+      }
+    }
+
+    &__logo {
+      float : left;
+      width: auto;
+      display : inline-block;
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 19px;
+      .fa-youtube {
+        margin-right : 13px;
+        display : inline-block;
+        &:before {
+          content: "\f167";
+          font-size: 28px;
+          line-height: 28px;
+          color: #FF0400;
+        }
+      }
+    }
+    &__follow-btn {
+      border-radius: 1px 0 0 1px;
+      background-color: #FF0400;
+      color: #FFFFFF;
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: -0.4px;
+      line-height: 15px;
+      text-transform : uppercase;
+      float : right;
+      display : inline-block;
+      padding : 8px 10px 9px 10px;
+      cursor : pointer;
+      text-decoration : none;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      position: relative;
+      top: -4px;
+      &:hover {
+        text-decoration : none;
+        -webkit-box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.4);
+        -moz-box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.4);
+        box-shadow: 0px -2px 17px 0px rgba(0,0,0,0.4);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s
+      }
+    }
+    &__content {
+      background : #ffffff;
+      padding : 29px 32px 32px 27px;
+      min-height : 462px;
+      -webkit-box-shadow:  0 1px 1px 0 rgba(0,0,0,0.1);
+      box-shadow:  0 1px 1px 0 rgba(0,0,0,0.1);
+      @include tablet-mobile {
+        min-height : 0;
+        padding : 14px 16px 14px 16px;
+      }
+      @include small-screen {
+        min-height: 452px !important;
+      }
+      .yotube-video-wrapper {
+        width : 100%;
+        max-height: 343px;
+        overflow: hidden;
+
+        @include tablet-mobile {
+          max-height: none;
+        }
+        @include small-screen {
+          max-height: 343px;
+        }
+      }
+      .inner-block-video {
+        position: relative;
+        height: 0;
+        border: none;
+        padding-top: 55%;
+        @include small-screen {
+          padding-top: 54%;
+        }
+        iframe {
+          position: absolute;
+          left: 0;
+          right : 0;
+          bottom : 0;
+          top: 0;
+          width : 100%;
+          height : 100%;
+          max-height : 354px;
+          @include tablet-mobile {
+            max-height : none;
+          }
+        }
+      }
+
+      .yotube-video-info {
+        display : block;
+        width : 100%;
+        margin-top : 22px;
+        .yotube-title {
+          display : block;
+          font-size : 14px;
+          line-height: 13px;
+          color : #0068A6;
+          font-weight : bold;
+          font-family: Roboto;
+          @include phone-only{
+            font-size : 12px;
+          }
+        }
+        .author {
+          display : inline-block;
+          font-family: Roboto;
+          font-size: 11px;
+          letter-spacing: 0px;
+          line-height: 15px;
+          color: #0D0D0D;
+        }
+        .views {
+          display : inline-block;
+          font-family: Roboto;
+          font-size: 11px;
+          letter-spacing: 0px;
+          line-height: 15px;
+          color: #0D0D0D;
+        }
+        .past-time {
+          display : inline-block;
+          font-family: Roboto;
+          font-size: 11px;
+          letter-spacing: 0px;
+          line-height: 15px;
+          color: #0D0D0D;
+        }
+      }
+    }
+  }
+}

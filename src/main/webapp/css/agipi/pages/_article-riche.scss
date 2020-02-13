@@ -1,0 +1,29 @@
+.article-riche {
+
+    .background-white {
+        &:nth-child(odd){
+            background-color: $white;
+        }
+        &:nth-child(even){
+            background-color: $light-grey;
+            .last-value-block {
+                .value-block {
+                    &:before {
+                        border-color: transparent transparent transparent $light-grey;
+                    }
+                }
+            }
+            .result-value:before {
+                border-color: transparent transparent transparent $light-grey;
+            }
+
+            #chartEvolutionaryValue {
+                .jqplot-xaxis-tick {
+                    &:before {
+                        background: #F3F3F5 !important;
+                    }
+                }
+            }
+        }
+    }
+}

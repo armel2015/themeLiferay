@@ -1,0 +1,80 @@
+.alert-block{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 8px;
+  margin-top: 5px;
+  @include desktop-only {
+    margin-top: 100px;
+  }
+  &.red{
+    background-color: $error;
+    .close-message{
+      color: $error;
+    }
+  }
+  &.green{
+    background-color: $green;
+    .close-message{
+      color: $green;
+    }
+  }
+  &.blue{
+    background-color: $blue;
+    .close-message{
+      color: $blue;
+    }
+  }
+
+  &.hide{
+    height: 0;
+    padding: 0;
+  }
+
+  .alert-message{
+    display: block;
+    text-align: center;
+    @include phone-only {
+      display: block;
+    }
+    .close-message{
+      text-transform: uppercase;
+      width: auto;
+      margin: 0 85px 0 85px;
+      min-width: 145px;
+      @include phone-only {
+        float: none;
+        display: block;
+        max-width: 200px;
+        margin: 5px auto 10px auto;
+      }
+
+      @include tablet-only {
+        margin: 0 auto;
+      }
+    }
+
+    .message-text {
+      max-width: 60%;
+      display: inline-block;
+      padding: 10px;
+      vertical-align: middle;
+      @include phone-only {
+        width: 100%;
+        float: none;
+        max-width: none;
+      }
+      p,a{
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        vertical-align: baseline;
+        text-transform: uppercase;
+        max-width: 100%;
+      }
+      a{
+        text-decoration: underline;
+      }
+    }
+  }
+}

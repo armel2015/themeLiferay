@@ -1,0 +1,17 @@
+header{
+	display: none;
+}
+
+.breadcrumb-socials{
+	
+	display : none;
+}
+
+footer {
+	display : none;
+}
+
+#agipi #wrapper {
+    margin-top: 0px;
+    padding-top: 0px !important; /* palie au padding-top sur l'element placé par marginIfCookie() */
+}

@@ -1,0 +1,464 @@
+.prevoyance-situation-page {
+  .content-block {
+    @include phone-only {
+      padding: 41px 24px 50px;
+    }
+  }
+  .mb {
+    top: 40px;
+    right: 20px;
+  }
+  .prevoyance-top-title {
+    span {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .prev-portlet-block {
+    margin-bottom: 20px;
+
+    .bonus {
+      min-height: 58px;
+    }
+
+    .type-gestion {
+      min-height: 47px;
+    }
+  }
+
+  .mon-pret-block {
+    padding-left: 55px;
+    padding-top: 45px;
+    margin-top: 0;
+
+    @include phone-only {
+      padding-left: 24px;
+    }
+
+    &__title {
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 22px;
+      text-transform: uppercase;
+      margin-bottom: 61px;
+
+      @include phone-only {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__capital-block {
+      padding-left: 22px;
+      display: block;
+      position: relative;
+      margin-bottom: 85px;
+      padding-top: 5px;
+
+      &:before {
+        display: block;
+        content: '';
+        background-color: #2D3449;
+        width: 3px;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &--title {
+        color: #2D3449;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 22px;
+      }
+
+      &--value {
+        color: #2D3449;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+        display: block;
+      }
+
+      &--dure {
+        color: #222739;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        margin-top: 10px;
+
+        .label {
+          display: inline-block;
+          font-weight: bold;
+        }
+        .value {
+          display: inline-block;
+          font-weight: 200;
+        }
+      }
+    }
+
+    .lending-organization {
+      &__title {
+        color: #222739;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 22px;
+      }
+
+      span {
+        display: block;
+        font-weight: 300;
+        color: #222739;
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+  .prestations-block {
+    .content-hide-block {
+      border-top: none;
+      margin: 0;
+      padding-top: 0;
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+    .content-inner-hide__block {
+      margin-top: 20px;
+
+
+      @include phone-only {
+        margin-bottom: 20px;
+      }
+
+      &__close {
+        right: 11px;
+        top: 14px;
+      }
+    }
+    .content-inner-hide__block--wrapper {
+      padding-bottom: 0;
+    }
+    .content-inner-hide__block__list {
+      li {
+        .garanti-beneficiare {
+          margin-top: 20px;
+
+          &:first-of-type {
+            margin-top: 0;
+          }
+        }
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .content-inner-hide__block__value {
+      display: block;
+    }
+    .content-hide-block__arr {
+      top: 10px;
+
+      &.mb {
+        top: 40px;
+        right: 20px;
+      }
+    }
+    .prestations-top-block {
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(190, 190, 190, 0.5);
+
+      @include phone-only {
+        padding-right: 15%;
+      }
+
+      &__title {
+        float: left;
+        width: auto;
+        display: inline-block;
+        color: #2D3449;
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: normal;
+
+        @include tablet-mobile {
+          display: block;
+          width: 85%;
+        }
+      }
+    }
+
+    &__title {
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 22px;
+      text-align: left;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .download {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+
+    @include tablet-mobile {
+      margin-top: 15px;
+    }
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+
+      &:before {
+        background: $blue;
+      }
+    }
+    &:before {
+      content: '\f019';
+      font-family: "FontAwesome";
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      margin-right: 3px;
+      font-weight: 300;
+      font-size: 1.3rem;
+      height: 24px;
+      line-height: 24px;
+      color: #fff;
+      width: 24px;
+      border-radius: 50px;
+      background-color: #C31981;
+      top: -2px;
+    }
+  }
+
+  .membership-fee-display {
+    width: 49%;
+
+    @include tablet-only {
+      width: 100%;
+      min-height: 0;
+    }
+
+    .interactive {
+      min-height: 0;
+      margin-bottom: 0;
+    }
+    .constitue-block {
+      padding-left: 23px;
+      margin-bottom: 38px;
+      padding-top: 5px;
+      margin-left: 5px;
+      padding-bottom: 4px;
+    }
+    .download-info {
+      margin-bottom: 25px;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+    .left-interactive {
+      padding-top: 0;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    &__text {
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: italic;
+      line-height: 17px;
+      text-align: left;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    @include tablet-only {
+      height: auto;
+    }
+
+    @include phone-only {
+      width: 100%;
+    }
+  }
+
+  .content-table__block {
+    word-wrap: break-word;
+    table {
+      width: 90%;
+      margin: 36px 0 0;
+      @include tablet-mobile {
+        width: 100%;
+      }
+    }
+    tbody {
+      td {
+        padding: 14px 0 12px;
+        @include tablet-mobile {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .content-table__block:nth-child(even) {
+    padding: 0 0 0 30px;
+
+    @include phone-only {
+      padding: 0;
+    }
+  }
+
+  .benefeciaries-content {
+
+    &__wrap {
+      padding-top: 15px;
+      border-bottom: 1px solid lightgray;
+      padding-bottom: 13px;
+
+
+      .compensation {
+        &--wrap {
+          margin-top: 21px;
+
+          &__title {
+            color: #2D3449;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 19px;
+          }
+        }
+
+        &--block {
+          position: relative;
+          width: 31.5%;
+          padding: 12px 15px;
+          margin-right: 23px;
+          margin-bottom: 23px;
+          margin-top: 13px;
+          display: inline-block;
+          background-color: #DFF0FB;
+
+          @include tablet-only {
+            width: 100%;
+          }
+
+          @include phone-only {
+            width: 100%;
+          }
+
+          &:nth-of-type(3) {
+            margin-right: 0;
+          }
+
+          &__value-1 {
+            color: #2D3449;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 17px;
+            display: block;
+            margin-bottom: 4px;
+          }
+
+          &__value-2 {
+            color: #0068A6;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 17px;
+            display: block;
+          }
+        }
+      }
+
+      &--validate {
+        color: #2D3449;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+      }
+    }
+
+    &__text {
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+      span {
+        display: block;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 19px;
+        text-transform: uppercase;
+      }
+    }
+
+    &__title {
+      color: #2D3449;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 22px;
+
+    }
+  }
+
+  .content-table__block:nth-child(odd):after {
+    height: 100%;
+  }
+
+  .prestations-block {
+    padding-top: 44px;
+
+    .download {
+      margin-bottom: 10px;
+    }
+  }
+  .with-padding-item {
+    padding-left: 21px;
+  }
+}
+
+.prevoyance-option-block {
+  &__container {
+    width: 100%;
+  }
+  .label-part {
+    float: left;
+  }
+  .value-list-part {
+    float: left;
+    .val-option {
+      font-weight: 400 !important;
+      display: block;
+      color: #6B6B6B;
+      padding-left: 7px;
+    }
+  }
+}

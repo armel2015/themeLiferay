@@ -1,0 +1,224 @@
+.mon-axa-interface {
+  .field-with-tooltip {
+    position: relative;
+  }
+  h2 {
+    margin-top: 18px;
+
+    &:nth-of-type(2) {
+      margin-top: 34px;
+    }
+  }
+  a.more {
+    color: $blue;
+    text-decoration: underline;
+  }
+
+  .contact-i-want {
+    max-width: 450px;
+    label {
+      display: table;
+    }
+    @include phone-only {
+      max-width: 320px;
+    }
+
+    .select {
+      margin-top: 0;
+      &:last-of-type {
+        margin-bottom: 53px;
+      }
+    }
+    .control {
+      margin-bottom: 7px;
+    }
+
+    input[type="radio"] {
+      @include phone-only {
+        display: block;
+      }
+    }
+  }
+  .contacter-conseiller {
+    color: grey;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 32px;
+    margin-bottom: 72px;
+    display: block;
+  }
+  .label {
+    font-weight: 300;
+  }
+  .help-popup-container {
+    position: absolute;
+    right: -10px;
+    transform: translateX(100%);
+    z-index: 10;
+    top: 0;
+
+    @include phone-only {
+      position: relative;
+      right: 0;
+      transform: translateX(0);
+    }
+  }
+
+  .first {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .user-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #BEBEBE;
+    display: block;
+
+    &-title {
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .user-adresse {
+    font-size: 18px;
+    font-weight: 400;
+    color: #BEBEBE;
+    display: block;
+
+    &-title {
+      color: black;
+      font-weight:bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .contact-adress-info {
+    text-align: center;
+    margin-bottom: 60px;
+    @include phone-only {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: $blue;
+      text-decoration: underline;
+
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .champs {
+    margin: 30px;
+    margin-bottom: 37px;
+  }
+
+  .select {
+    max-width: 400px;
+  }
+
+  .col-part {
+    padding-right: 0;
+    input {
+      max-width: 400px;
+    }
+
+    .error-text {
+      padding-right: 28px;
+
+      @media only screen and (max-width : 850px) and (min-width : 768px) {
+        padding-right: 0;
+      }
+      @include phone-only {
+        padding-right: 0;
+      }
+
+    }
+
+    &.width-max {
+      input {
+        max-width: 100%;
+      }
+
+      .error-text {
+        padding-right: 0;
+      }
+    }
+
+    &.right-col {
+      padding-left: 20px;
+
+      .error-text {
+        padding-right: 0;
+      }
+
+      @include phone-only {
+        padding-left: 0;
+      }
+
+    }
+
+  }
+
+  .statick-info {
+    margin: 30px auto;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+
+  .site-info {
+    text-align: center;
+    color: #000000;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+
+    span {
+      display: block;
+
+      a {
+        color: $blue;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 29px;
+      }
+    }
+  }
+
+  .complain-type-select {
+
+    @include phone-only {
+      width: 80%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  textarea {
+    &.error-validate {
+      border: 1px solid $error;
+    }
+
+    &.error {
+      order: 1px solid $error;
+    }
+  }
+}
+
+
+

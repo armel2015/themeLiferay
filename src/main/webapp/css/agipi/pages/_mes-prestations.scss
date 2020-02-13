@@ -1,0 +1,123 @@
+.right-part.prevoyance-top-title {
+  padding-top: 0;
+}
+.prestations-page {
+  .prestations-block {
+    padding: 21px 45px 50px;
+    margin-top: 0;
+    .content-hide-block {
+      border-top: none;
+
+      &__title {
+        margin-bottom: 5px;
+        .content-hide-block__arr {
+          position: relative;
+          display: inline-block;
+          top: 3px;
+          left: 4px;
+        }
+        &-1 {
+          @include tablet-only {
+            width: auto;
+          }
+        }
+        &-2 {
+          padding: 0 0 0 7px;
+        }
+      }
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+    }
+    .content-inner-hide__block {
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+
+    .content-inner-hide__block__list {
+      span {
+        font-weight: bold;
+      }
+
+      li {
+        font-weight: 300;
+      }
+    }
+
+    .content-inner-hide__block__close {
+      top: 15px;
+    }
+    .prestations-top-block {
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(190, 190, 190, 0.5);
+      margin-bottom: 14px;
+
+      &__title {
+        float: left;
+        width: auto;
+        display: inline-block;
+        color: #2D3449;
+        font-weight: normal;
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 22px;
+
+        @include tablet-mobile {
+          display: block;
+          width: 85%;
+        }
+      }
+
+      &__attache {
+        float: right;
+        width: auto;
+        display: inline-block;
+        position: relative;
+        color: #2D3449;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 25px;
+        margin-right: 7.5%;
+
+        @include tablet-mobile {
+          float: left;
+          margin-top: 15px;
+        }
+
+
+        &:hover {
+          color: $blue;
+          text-decoration: none;
+
+          &:before {
+            background: $blue;
+          }
+        }
+        &:before {
+          content: '\f019';
+          font-family: "FontAwesome";
+          position: relative;
+          text-align: center;
+          display: inline-block;
+          margin-right: 3px;
+          font-weight: 300;
+          font-size: 1.3rem;
+          height: 24px;
+          line-height: 24px;
+          color: #fff;
+          width: 24px;
+          border-radius: 50px;
+          background-color: #C31981;
+        }
+      }
+    }
+  }
+
+  .content-inner-hide__block__value {
+    display: block;
+  }
+}

@@ -1,0 +1,45 @@
+
+.detail-offre{
+	
+	.rich-text{
+		text-align: left;
+		h2,h3,h4,h5{
+			color: $black;
+		}
+		h4{
+			font-size: 2rem;
+			line-height: 2.2rem;
+			margin-bottom: 15px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+	}
+
+	.avantages-fiscaux{
+		img{
+			width: 100%;
+		}
+		.legend-composition{
+			border-left: 4px solid #C31981;
+		    margin-left: 35px;
+		    padding-left: 30px;
+		    vertical-align: top;
+		    width: 100%;
+		    display: inline-block;
+		    @include desktop-only {
+		    	margin-top: 75px;
+		    	max-width: 240px;
+		    }
+		    @include phone-only {
+		    	margin-left: 0;
+		    }
+			.title{
+				font-size: 38px;	
+				font-weight: 900;	
+				line-height: 46px;
+				color: $pink;
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+$tablet_breakpoint: 1024px;
+$mobile_breakpoint: 720px;
+//for small PC and IpadPro
+$smallscreen_breakpoint: 1366px;
+$start-width: 0;
+$min-large: 1700px;
+
+@mixin desktop-only{
+    @media only screen and (min-width : $tablet_breakpoint + 1) {
+        @content;
+    }
+}
+
+@mixin phone-only{
+    @media  (max-width : $mobile_breakpoint) and (orientation:landscape) {
+        @content;
+    }
+    @media only screen and (max-device-width : $mobile_breakpoint) {
+        @content;
+    }
+}
+
+@mixin tablet-only{
+    @media only screen and (max-width : $tablet_breakpoint) and (min-width : $mobile_breakpoint + 1) and (orientation : landscape) {
+        @content;
+    }
+    @media only screen and (max-device-width : $tablet_breakpoint) and (min-device-width : $mobile_breakpoint + 1){
+        @content;
+    }
+}
+
+@mixin tablet-mobile{
+    @media only screen and (min-width : $start-width) and (max-width: $tablet_breakpoint ) {
+        @content;
+    }
+    @media only screen and (max-device-width : $tablet_breakpoint ) and (min-device-width : $start-width){
+        @content;
+    }
+}
+
+@mixin large-window{
+    @media only screen and (min-width : $min-large)  {
+        @content;
+    }
+    @media only screen  and (min-device-width : $min-large){
+        @content;
+    }
+}
+
+@mixin small-screen{
+    @media only screen and (max-width : $smallscreen_breakpoint) and (min-width : $tablet_breakpoint + 1){
+        @content;
+    }
+}
+
+@include desktop-only {
+    .phone-only {
+        display: none!important;
+    }
+    .phone-tablet-only {
+        display: none!important;
+    }
+    .tablet-only{
+        display: none!important;
+    }
+    .not-in-desktop {
+        display: none!important;
+    }
+}
+
+
+@include tablet-only {
+    .desktop-only {
+        display: none!important;
+    }
+    .phone-only{
+        display: none!important;
+    }
+}
+
+@include phone-only {
+    .desktop-only {
+        display: none!important;
+    }
+    .tablet-desktop-only {
+        display: none!important;
+    }
+    .tablet-only{
+        display: none!important;
+    }
+}
+
+@include tablet-mobile {
+    .desktop-only {
+        display: none!important;
+    }
+}

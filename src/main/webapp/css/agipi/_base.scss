@@ -1,0 +1,36 @@
+
+html{
+    font-family: "Lato", sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+    font-size: calc(1em * 0.625);
+    overflow-x: hidden;
+
+    &.overflow-hidden {
+        overflow: hidden;
+    }
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: "Lato",sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    background: #F3F3F5;
+    min-width: 320px;
+    overflow-x: hidden;
+    @include desktop-only {
+        margin-top: -160px;
+    }
+    .map-disclaimer-editor {
+        padding: 10px !important;
+        border: 1px solid #bebebe !important;
+        min-height: 20px !important;
+        margin-bottom: 20px !important;
+        border-radius: 3px !important;
+    }
+    .main-content-card > .alloy-editor-container .alloy-editor-wrapper {
+        padding-top: 10px !important;
+    }
+}

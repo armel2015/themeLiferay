@@ -1,0 +1,244 @@
+//This class need to use when in block you set data from wysiwyg
+//for Example:
+//<div class="description-bottom__sub-title-text wysiwyg-richtext-agipi">
+//     ${description.getData()} -> wysiwyg
+//</div>
+
+.wysiwyg-richtext-agipi {
+  font-size: 18px;
+  font-weight: 400;
+  h1 {
+    font-family: 'Lato';
+    line-height: 5.2rem;
+    font-size: 4.4rem;
+    font-weight: bold;
+    color: #0068a1;
+    @include phone-only {
+      font-size: 3.4rem;
+      line-height: 4.1rem;
+    }
+  }
+  h2 {
+    font-family: 'Lato';
+    font-size: 3rem;
+    line-height: 3.6rem;
+    color: #0068a1;
+    font-weight: bold;
+  }
+  h3 {
+    font-family: 'Lato';
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #0068a1;
+  }
+  h4 {
+    font-family: 'Lato';
+    font-size: 3rem;
+    line-height: 3.2rem;
+    color: #0068a1;
+    font-weight: bold;
+  }
+
+  p {
+    color: #2d3449;
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 0 23px 0;
+    text-align: left;
+    strong {
+      font-weight: bold;
+      span {
+        font-weight: bold;
+        em {
+          font-style: italic;
+        }
+
+      }
+      em {
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+    em {
+      font-weight: 300;
+      font-style: italic;
+    }
+    span {
+      font-weight: 300;
+    }
+    @include tablet-only {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @include phone-only {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    width: auto;
+    color: #2d3449;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:before {
+      content: '\f178';
+      font-family: "FontAwesome";
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      margin-right: 3px;
+      font-weight: 300;
+      font-size: 1.3rem;
+      height: 24px;
+      color: #fff;
+      width: 24px;
+      border-radius: 50px;
+      background-color: #ca1e7e;
+      line-height: 24px;
+    }
+    &.download {
+      &:before {
+        content: ""!important;
+      }
+    }
+    &.big-pink-btn {
+      height: 60px;
+      width: 349px;
+      border-radius: 30px;
+      background-color: #c31981;
+      border: 0;
+      outline: 0;
+      display: inline-block;
+      color: #fff;
+      font-family: Lato;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      -ms-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      cursor: pointer;
+      margin: 12px 5% 30px 0;
+      padding: 23px 0 22px 0;
+      position: relative;
+      text-decoration: none;
+      &:before {
+        display: none;
+      }
+    }
+
+    &:hover {
+      color: #0068A1;
+      text-decoration: none;
+      &:before {
+        background: #0068A1;
+      }
+    }
+  }
+  ul {
+    padding-left: 25px;
+    margin-top: 5px;
+    li {
+      color: #2d3449;
+      font-family: Lato;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 26px;
+      text-align: left;
+      list-style: disc;
+      display: list-item;
+      strong {
+        font-weight: bold;
+        span {
+          font-weight: bold;
+          em {
+            font-style: italic;
+          }
+
+        }
+        em {
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
+      em {
+        font-weight: 300;
+        font-style: italic;
+      }
+      span {
+        font-weight: 300;
+      }
+      @include tablet-only {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      @include phone-only {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  ol {
+    padding-left: 20px;
+    margin-top: 5px;
+    li {
+      padding-left: 5px;
+      color: #2d3449;
+      font-family: Lato;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 26px;
+      text-align: left;
+      list-style: decimal;
+      display: list-item;
+      strong {
+        font-weight: bold;
+        span {
+          font-weight: bold;
+          em {
+            font-style: italic;
+          }
+
+        }
+        em {
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
+      em {
+        font-weight: 300;
+        font-style: italic;
+      }
+      span {
+        font-weight: 300;
+      }
+      @include tablet-only {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      @include phone-only {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  sub, sup {
+    padding-left: 1px;
+    padding-right: 4px
+  }
+}

@@ -1,0 +1,82 @@
+/*
+ * Hack du thème AGIPI
+ * Rétablit le css liferay 
+ * notemment pour la partie admin, pour les portlet intégrés à un template
+ */
+ 
+#agipi{
+	#wrapper{
+		.portlet-topper{
+			display : flex;
+			text-align: left;
+    		padding-left: 10px;
+			.portlet-topper-toolbar{
+				display: block;
+				.dropdown{
+					ul{ /* Hide config menu on rss portlet on home page */
+						display: none;
+					}
+				}
+			}
+			
+		}
+		.portlet-content-editable{
+			color : grey;
+		}
+		.highlight-block-menu{ /* be able to cach webcontent config menu on panoptic menu highlight bloc */
+			.portlet-topper{
+				top: 20px;
+				.lexicon-icon {
+					color: #777;
+				}
+			}
+		}
+		.portlet { /* replace web contents config menu (even when associated webcontent no more exists) */
+			&:hover, &.focus {
+				> .portlet-content-editable {
+						border-width: 2px;
+						border-color : cornflowerblue;
+				}
+			}
+		}
+
+		.home-block {
+			.portlet-topper {
+				top: 300px;
+				background: #ffffff;
+				z-index: 10000;
+			}
+			.alert-msg {
+				position: relative;
+				z-index: 300;
+				.portlet-boundary  {
+					opacity: 0.9;
+				}
+				@include desktop-only {
+					margin-top: 100px; /* be able to config web content on alert msg when web content has been deleted */
+				}
+
+				.portlet-topper {
+					top: 30px;
+				}
+			}
+			.blue-link-list {
+				.portlet-topper {
+					top: 30px;
+				}
+			}
+		}
+	}
+
+	&.estimate-page-js {
+		#ui-datepicker-div {
+			.ui-datepicker-buttonpane {
+				.ui-datepicker-current {
+					display: none !important;
+				}
+			}
+		}
+	}
+}
+
+

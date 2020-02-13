@@ -1,0 +1,224 @@
+
+.rich-text {
+    font-family: 'Lato';
+    color: $grey-dark;
+    font-weight: normal;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    &.big-rich-text{
+        max-width: 100%;
+    }
+    
+    p {
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 2.2rem;
+        font-family: inherit;
+        color: $grey-dark;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        a.download {
+            span {
+                font-weight: bold;
+            }
+        }
+        a {
+            margin: 0;
+            margin-bottom: 10px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        img {
+            float: left;
+            margin-right: 30px;
+            margin-top: 0;
+            margin-bottom: 20px;
+
+            &.left-side {
+                float: left;
+                margin-right: 30px;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+
+            &.right-side {
+                float: right;
+                margin-right: 0;
+                margin-bottom: 20px;
+                margin-left: 30px;
+            }
+        }
+
+        &:after {
+            display: table;
+            content: '';
+            clear: both;
+        }
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+    strong{
+        font-weight: bold;
+    }
+
+    h1 {
+        font-family: 'Lato';
+        line-height: 5.2rem;
+        font-size: 4.4rem;
+        font-weight: bold;
+        color: $blue;
+        @include phone-only {
+            font-size: 3.4rem;
+            line-height: 4.1rem;
+        }
+    }
+    h2{
+        font-family: 'Lato';
+        font-size: 3rem;
+        line-height: 3.6rem;
+        color: $blue;
+        font-weight: bold;
+        @include phone-only {
+            font-size: 2.6rem;
+            line-height: 3.2rem;
+        }
+    }
+    h3{
+        font-family: 'Lato';
+        font-size: 3rem;
+        line-height: 3.2rem;
+        color: $blue;
+        font-weight: 300;
+    }
+    h4{
+        font-family: 'Lato';
+        font-size: 3rem;
+        line-height: 3.2rem;
+        color: $blue;
+        font-weight: bold;
+        @include phone-only {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+    }
+    h5{
+        font-family: 'Lato';
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        color: $grey-dark;
+        font-weight: 300;
+    }
+    h6{
+        font-family: 'Lato';
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-weight: normal;
+        color: $grey-dark;
+        font-weight: 300;
+    }
+
+    a[class=""], a:not([class]),a.download {
+        color: $black;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        &:hover{
+            text-decoration: none;
+            color: $blue;
+            &:before{
+                background-color: $blue;
+            }
+        }
+        &:before{
+            content:'\f178';
+            font-family: "FontAwesome";
+            position: relative;
+            text-align: center;
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: 300;
+            font-size: 1.3rem;
+            height: 24px;   
+            color: $white;
+            width: 24px;   
+            border-radius: 50px;
+            background-color: $pink;
+        }
+    }
+    a.download{
+
+        span {
+            font-weight: bold;
+        }
+        &:before{
+            content:'\f019'!important;
+        }
+    }
+
+    table{
+        width: 100%;
+        margin-top: 20px;
+        table-layout: fixed;
+        tr{
+            td{
+                font-size: 1.8rem;
+                line-height: 2rem;
+                padding: 10px 20px;
+                color: $black;
+                text-align: left;
+                @include phone-only {
+                    display: block;
+                    width: 160px !important;
+                }
+            }
+            th{
+                color: $blue;
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-align: center;
+                @include phone-only {
+                    width: 150px !important;
+                }
+            }
+            th[scope="row"]{
+                text-align: right;
+            }
+        }
+    }
+
+    ul,ol{
+        li{
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 2.2rem;
+            font-family: inherit;
+            color: $grey-dark;
+            display: list-item;
+            margin-left: 40px;
+        }
+    }
+
+    em{
+        font-style: italic;
+    }
+
+    img{
+        @include phone-only {
+            width: 100%;
+        }
+    }
+}
+

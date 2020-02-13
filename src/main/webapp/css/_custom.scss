@@ -1,0 +1,65 @@
+@import "agipi/bourbon/bourbon";
+
+@charset "UTF-8";
+@import "agipi/fonts";
+@import "agipi/icons";
+@import "agipi/variables";
+@import "agipi/breakpoints";
+@import "agipi/base";
+
+@import "agipi/liferay_overrides";
+
+#agipi{
+    @import "agipi/reset";
+    @import "agipi/revert";
+    @import "agipi/pages/integral-container";
+    #wrapper{
+        @import "agipi/common";
+        @import "agipi/layout";
+        @import "agipi/header";
+        @import "agipi/header-extranet";
+        @import "agipi/footer";
+        @import "agipi/slider";
+        @import "agipi/jqplot";
+        @import "agipi/pages/homepage";
+        @import "agipi/pages/article-riche";
+        @import "agipi/pages/contact";
+        @import "agipi/pages/page-uc";
+        @import "agipi/pages/list-actu";
+        @import "agipi/pages/detail-offre";
+        @import "agipi/pages/search-for-advisor";
+        @import "agipi/pages/search-page";
+        @import "agipi/pages/alert_message";
+        @import "agipi/pages/homepage-extranet";
+        @import "agipi/pages/mon-profil-extranet";
+        @import "agipi/pages/referencesList";
+        @import "agipi/pages/mon-conseiller";
+        @import "agipi/pages/my-contracts";
+        @import "agipi/pages/parrainage";
+        @import "agipi/pages/my-documents";
+        @import "agipi/pages/mes-operations";
+        @import "agipi/pages/ma-situation";
+        @import "agipi/pages/mes-eremboursementsen-pratique";
+        @import "agipi/pages/prevention";
+        @import "agipi/pages/evaluation-retraite";
+        @import "agipi/pages/mes-eremboursements-sante";
+        @import "agipi/pages/mes-prestations";
+        @import "agipi/pages/ma-situation-prevoyance";
+        @import "agipi/pages/mon-axa-interface";
+        @import "agipi/pages/estimation-page";
+        @import "agipi/pages/convention";
+        @import "agipi/pages/vielle-page";
+        @import "agipi/pages/hub-page";
+        @import "agipi/pages/follow-us-block";
+        @import "agipi/slick-slider";
+        @import "agipi/pages/slick";
+        @import "agipi/pages/actualies";
+        @import "agipi/pages/vielle-page";
+        @import "agipi/agipi-quizz";
+        @import "agipi/pages/agipi-portlet";
+        @import "agipi/pages/veille-reglementaire-page-unique";
+        @import "agipi/wysiwyg-richtext-agipi";
+    }
+}
+
+@import "agipi/agipi_overrides";

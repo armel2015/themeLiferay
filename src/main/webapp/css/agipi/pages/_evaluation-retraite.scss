@@ -1,0 +1,315 @@
+.evalueation {
+  padding: 31px 51px 50px;
+
+  .content-title {
+    text-align: left;
+  }
+  h2 {
+    color: $black;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+
+  &__top-label {
+    color: $black;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: none;
+  }
+
+  &__chart-titile {
+    color: $black;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 32px;
+    text-transform: uppercase;
+    margin-bottom: 88px;
+  }
+
+  &__value-info {
+    padding-bottom: 21.5px;
+    border-bottom: 1px solid lightgrey;
+    p {
+      color: $black;
+      font-family: Lato;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: left;
+
+      sup {
+        font-size: 11px;
+        margin-right: 6px;
+      }
+    }
+  }
+
+  &__description {
+    padding-top: 23.5px;
+    border-top: 1px solid lightgrey;
+    p {
+      color: $black;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 18px;
+      text-align: left;
+    }
+  }
+
+  @include phone-only {
+    width: 95%;
+    margin: 0 auto;
+    padding: 45px 4%;
+    text-align: left;
+  }
+}
+
+.evolution-wrap {
+  float: right;
+  width: 78%;
+  @include phone-only {
+    padding-top: 20px;
+    width: 100%;
+    clear: both;
+
+    h2 {
+      padding-top: 32px;
+    }
+  }
+  @include tablet-only {
+    float: none;
+    width: 95%;
+    margin: 0 auto;
+  }
+  @include small-screen {
+    float: right;
+    width: 78%;
+  }
+  .jqplot-xaxis-tick {
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: calc(100% + 4px);
+      height: 16px;
+      width: 1px;
+      background: #9D9D9D;
+      left: calc(50% - 1px);
+    }
+  }
+}
+
+#chart8 {
+  height: 410px;
+  margin-top: 157px;
+  width: 100%;
+  float: none;
+  margin-bottom: 20px;
+
+  @media only screen and (max-width : 1366px) and (min-width : 1025px) {
+    height: auto;
+  }
+
+  @include tablet-only {
+    height: auto;
+  }
+
+
+  @include phone-only {
+    height: auto;
+  }
+
+  .custom-legend {
+    position: relative !important;
+    top: -116px !important;
+    left: 0 !important;
+    padding-left: 0 !important;
+
+    @include tablet-mobile {
+      top: -90px !important;
+    }
+  }
+
+  .legend-target {
+    display: inline-block;
+    margin-right: 0;
+    padding-right: 30px;
+    float: left;
+    width: 48%;
+
+    &:last-of-type {
+      margin-left: -30px;
+      @include phone-only {
+        margin-left: 0;
+      }
+    }
+
+    &:after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+  }
+
+  .jqplot-table-legend-swatch-outline {
+    border: none;
+  }
+
+  .jqplot-table-legend-swatch {
+    width: 30px;
+    height: 30px;
+    border-width: 0;
+  }
+
+  .color {
+    float: left;
+    display: block;
+  }
+
+  .text-legend {
+    float: left;
+    display: block;
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 13px;
+    width: 88%;
+    text-align: left;
+    @include small-screen {
+      width: 73%;
+    }
+  }
+
+  .jqplot-axis.jqplot-yaxis {
+    margin-left: 40px;
+  }
+
+  .jqplot-xaxis-tick {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .jqplot-yaxis-tick {
+    font-size: 16px;
+  }
+  .jqplot-highlighter-tooltip {
+    padding-right: 13px;
+    background: white;
+    font-size: 13px;
+    color: black;
+    padding-left: 5px;
+    -webkit-box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, 0.25);
+    &:before {
+      display: inline-block;
+      position: absolute;
+      right: 3px;
+      top: 1px;
+      content: '\0020AC';
+    }
+  }
+
+  .jqplot-table-legend {
+    position: absolute !important;
+  }
+
+  .prog-bar {
+    height: 35px;
+  }
+
+  .prog-wrap {
+    border: 1px solid lightgrey;
+    margin-bottom: 5px;
+    position: relative;
+
+    span {
+      display: inline-block;
+      position: absolute;
+      right: 10%;
+      top: 10px;
+    }
+  }
+
+  .progbar-label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: left;
+  }
+
+  .jqplot-event-canvas {
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+  }
+
+  .date-graph {
+    color: #9D9D9D;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    text-align: center;
+  }
+}
+
+.custom-legend.mobile-legend {
+  display: none !important;
+
+  @media only screen and (max-width : 1366px) and (min-width : 1025px) {
+    display: none !important;
+  }
+  @include tablet-only {
+    display: block !important;
+    top: 115px;
+    text-align: left;
+    .legend-target {
+      margin-top: 20px;
+      padding-right: 2%;
+      .color {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 2%;
+      }
+    }
+  }
+  @include small-screen {
+    display: none !important;
+  }
+
+  @include phone-only {
+    display: block !important;
+    top: 165px;
+    text-align: left;
+    .legend-target {
+      margin-top: 20px;
+      padding-right: 2%;
+      .color {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 2%;
+      }
+    }
+  }
+}
+
+.fiscalite-js {
+  .content-hide-block__arr {
+    margin-right: 5%;
+    top: 35px;
+  }
+}
+
+//You need so many !important rules to change the display of graphic elements
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="23px" viewBox="0 0 16 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="02" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contacter-conseiller-V03-02" transform="translate(-92.000000, -1035.000000)" fill="#0068A6">
+            <g id="contact-01" transform="translate(92.000000, 1035.000000)">
+                <path d="M0,7.475 C0,11.615 8,23 8,23 C8,23 16,11.615 16,7.475 C16,3.349375 12.4218182,0 8,0 C3.57818182,0 0,3.349375 0,7.475 L0,7.475 Z M2.90909091,7.661875 C2.90909091,5.1175 5.35272727,2.875 8,2.875 C10.6472727,2.875 13.0618182,5.14625 13.0618182,7.67625 C13.0618182,10.220625 10.6327273,12.90875 7.97090909,12.90875 C5.32363636,12.90875 2.90909091,10.20625 2.90909091,7.661875 L2.90909091,7.661875 Z" id="icon-loca"></path>
+            </g>
+        </g>
+    </g>
+</svg>

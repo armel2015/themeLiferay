@@ -1,0 +1,126 @@
+.contracts__page {
+  .content-wrapper {
+    text-align: left;
+    @include tablet-mobile {
+      padding: 0 20px;
+    }
+  }
+}
+
+.contracts__head {
+  padding-top: 10px;
+
+  @include phone-only {
+    padding-left: 5%;
+  }
+  .contracts__title {
+    color: #0068A6;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    @include tablet-mobile {
+      font-size: 20px;
+    }
+  }
+  .contracts__subtitle {
+    color: #2D3449;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    margin-bottom: 36px;
+  }
+}
+
+.contracts {
+  padding-bottom: 85px;
+  border-top: 2px solid #D8D8E2;
+  background-color: #F3F3F5;
+  &__list--title {
+    font-size: 18px;
+    color: $black;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+
+    @include phone-only {
+      padding-left: 5%;
+    }
+  }
+  &__list {
+    background: #fff;
+    padding: 20px 0 0px 18px;
+    @media (min-width: 320px) and (max-width: 425px) {
+      padding: 20px 20px 20px 20px;
+    }
+  }
+  &-block {
+    margin: 0 18px 20px 0;
+    height: 192px;
+    position: relative;
+    display: block;
+
+    a {
+      display: block;
+    }
+    @media (min-width: 320px) and (max-width: 425px) {
+      float: none;
+      display: inline-block;
+      width: 100%;
+      margin-right: 0;
+      min-height: 0;
+    }
+    &__list {
+      max-height: none;
+      min-height: 80px;
+      @include phone-only {
+        min-height: 0;
+      }
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &__link{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: 10px;
+      bottom: 10px;
+      background: url(../images/icons/tooltip.svg) center center no-repeat;
+      z-index: 2;
+    }
+  }
+  &-block__wrap {
+    font-family: Lato;
+  }
+}
+
+.phone-focus {
+  z-index: 8;
+  &:before {
+    content: attr(title);
+    width: 170px;
+    background: black;
+    color: white;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+  }
+
+  @media (min-width: 320px) and (max-width: 425px) {
+    &:before {
+      width: 280px;
+      right: -10px;
+    }
+  }
+}

@@ -1,0 +1,244 @@
+.prevoyance--sante-page {
+  .prevoyance--sante {
+    padding: 33px 42px 48px;
+    margin-top: 0;
+    @include phone-only {
+      padding: 33px 24px 48px;
+    }
+    .download-info {
+      margin-top: 8px;
+      margin-bottom: 27px;
+    }
+
+    .details-popup__body.dates-body {
+
+      position: fixed;
+      transform: translate(0, 100%);
+
+      .content-select {
+        @include phone-only {
+          width: 100%;
+        }
+
+      }
+      select {
+        background: transparent;
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 0 0 0 15px;
+        font-size: 14px;
+        width: 300px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        color: #9D9D9D;
+
+        @include phone-only {
+          width: 100%;
+        }
+      }
+
+      .content-input__input {
+        width: 98px;
+        font-style: italic;
+      }
+      .content-input__title {
+        margin: 0 5px;
+
+        @include phone-only {
+          display: inline-block;
+        }
+      }
+
+      .content-select__title {
+        margin: 0;
+      }
+
+      .content-select {
+        @include tablet-only {
+          width: 300px;
+        }
+
+      }
+    }
+
+    .content-select {
+
+      &__title {
+        margin: 0 10px 0 0;
+        &:first-of-type {
+          margin-top: 9px;
+        }
+      }
+      select {
+        font-style: italic;
+        width: 161px;
+        display: block;
+
+        option {
+          width: 90%;
+          display: inline-block;
+        }
+
+        @include tablet-mobile {
+          width: 100%;
+        }
+
+      }
+
+      &.select-date-benefic {
+        width: 161px;
+        @include tablet-only {
+          width: 87%;
+          margin-bottom: 20px;
+          display: table;
+        }
+
+        @include phone-only {
+          width: 87%;
+          margin-bottom: 20px;
+          display: table;
+
+        }
+
+        select {
+          width: 188px;
+          font-style: italic;
+
+          option {
+            width: 90%;
+          }
+
+
+          @include tablet-mobile {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .text {
+      font-size: 16px;
+    }
+
+    .content-input__submit {
+      cursor: pointer;
+      margin: 0 0 0 27px;
+
+      @include tablet-only {
+        display: inline-block;
+      }
+
+      @include phone-only {
+        display: block;
+        margin: 20px auto;
+      }
+    }
+
+    .content-input__title {
+      margin: 0 9px;
+    }
+
+    .list-title {
+      color: #0A5395;
+      font-family: Lato;
+      font-size: 18px;
+      font-style: italic;
+      line-height: 22px;
+    }
+
+    .content-select--wrapper {
+      margin: 20px 0 0;
+
+      &.long-wrapper {
+        margin-bottom: 50px;
+        width: 100%;
+      }
+
+      &.float-right {
+        margin-top: 0;
+        width: auto;
+        padding-right: 13px;
+
+        @include tablet-mobile {
+          margin-top: 20px;
+        }
+      }
+
+      .content-input__input {
+        border: 1px solid #BEBEBE;
+      }
+    }
+
+    .content-hide-block {
+
+      &:first-of-type {
+        margin-top: 13px;
+      }
+      &__title {
+        &-1 {
+          @include tablet-only {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    .content-inner-hide__block__close {
+      top: 15px;
+    }
+
+    .content-inner-hide__block  {
+      vertical-align: top;
+
+      @include phone-only {
+        width: 100%;
+      }
+
+      &__value {
+        display: block;
+      }
+    }
+
+    .content-inner-hide__block--wrapper {
+      padding-bottom: 10px;
+    }
+  }
+
+  #remboursementsSanteList {
+    width: 99%;
+  }
+
+  .more-info-bth-prevoyance {
+    position: absolute;
+    width: 200px;
+    left:  0;
+    right:  0;
+    margin:  auto;
+    bottom: 10px;
+    cursor: pointer;
+
+    &__arr {
+      display: block;
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      right: 8px;
+      bottom: 5px;
+      border-bottom: 3px solid black;
+      border-right: 3px solid black;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    &__container {
+      width: auto;
+    }
+
+    div {
+      font-weight:  bold;
+      color: #0068A6;
+    }
+  }
+}
